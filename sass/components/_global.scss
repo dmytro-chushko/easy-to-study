@@ -1,0 +1,17 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+
+  cursor: pointer;
+}

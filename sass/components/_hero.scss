@@ -1,0 +1,334 @@
+.hero {
+  position: relative;
+  padding-top: 21.33vw;
+  background-color: #0A0070;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 22.52vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 7.91vw;
+    padding-left: 7.08vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__wrapper {
+      display: flex;
+      padding-right: 7.36vw;
+    }
+
+    &__title-wrapper {
+      padding-top: 5.27vw;
+    }
+  }
+  
+  &__title {
+    position: relative;
+    margin-bottom: 3.46vw;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 9.6vw;
+    line-height: 1.12;
+    color: #FDE589;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 1.95vw;
+      
+      font-size: 6.25vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 25.48vw;
+      margin-right: auto;
+      margin-bottom: 1.04vw;
+
+      font-size: 3.33vw;
+      line-height: 1.12;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 72.26vw;
+      height: 1.7vw;
+      margin: 0 auto;
+
+      background-image: url(../images/decoration.svg);
+      background-size: cover;
+
+      @media screen and (min-width: 1440px) {
+        width: 25.48vw;
+        height: 0.56vw;
+      }
+    }
+  }
+
+  &__description {
+    width: 57vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 51.2vw;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 4.8vw;
+    line-height: 1.22;
+    color: #FFFFFF;
+
+    @media screen and (min-width: 768px) {
+      width: 65.62vw;
+      margin-bottom: 25.13vw;
+
+      font-size: 3.12vw;
+      line-height: 1.21;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 35.1vw;
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 0;
+
+      font-size: 1.67vw;
+    }
+  }
+
+  &__pic {
+    position: relative;
+
+    width: 100vw;
+    height: 95.73vw;
+    background-image: url(../images/owl.svg);
+    background-size: cover;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      width: 68.82vw;
+      height: 64.09vw;
+      margin-left: auto;
+      background-image: url(../images/owl-tablet.svg);
+    }
+
+    @media screen and (min-width: 1440px) {
+            
+      width: 37.77vw;
+      height: 35.14vw;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    border-radius: 50%;
+
+    &--1 {
+      top: 18.9vw;
+      left: 6.66vw;
+
+      width: 15.46vw;
+      height: 15.46vw;
+      background-color: #8900FA;
+
+      @media screen and (min-width: 768px) {
+        top: 21.09vw;
+        left: 21.22vw;
+
+        width: 10.02vw;
+        height: 10.02vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: 12.08vw;
+        left: 5.27vw;
+        
+        width: 5.34vw;
+        height: 5.34vw;
+      }
+    }
+
+    &--2 {
+      top: 58.4vw;
+      left: 60.2vw;
+
+      width: 11.46vw;
+      height: 11.46vw;
+      background-color: #FC7387;
+
+      @media screen and (min-width: 768px) {
+        top: 55.46vw;
+        left: 25.13vw;
+
+        width: 3.64vw;
+        height: 3.64vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: 32.29vw;
+        left: 23.95vw;
+        
+        width: 1.94vw;
+        height: 1.94vw;
+      }
+    }
+
+    &--3 {
+      top: 77.6vw;
+      left: 25.33vw;
+
+      width: 14.13vw;
+      height: 14.13vw;
+      background-color: #30D4FE;
+      z-index: 1;
+
+      @media screen and (min-width: 768px) {
+        top: 36.19vw;
+        left: 4.56vw;
+
+        width: 5.46vw;
+        height: 5.46vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: 34.23vw;
+        left: 54.86vw;
+        
+        width: 2.91vw;
+        height: 2.91vw;
+      }
+    }
+
+    &--4 {
+      top: 103.73vw;
+      left: 57.86vw;
+
+      width: 7.46vw;
+      height: 7.46vw;
+      background-color: #FDE589;
+      z-index: 1;
+
+      @media screen and (min-width: 768px) {
+        top: 76.95vw;
+        left: 21.48vw;
+        
+        width: 5.46vw;
+        height: 5.46vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        display: none;
+      }
+    }
+
+    &--5 {
+      top: 81.33vw;
+      left: -3.73vw;
+
+      width: 107.46vw;
+      height: 107.46vw;
+      background-image: linear-gradient(180deg, #8900FA 0%, #FC7387 100%);
+
+      @media screen and (min-width: 768px) {
+        top: 56.38vw;
+        left: 48.69vw;
+        
+        width: 68.88vw;
+        height: 68.88vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: 5.41vw;
+        left: 57.8vw;
+        
+        width: 41.11vw;
+        height: 41.11vw;
+      }
+    }
+  }
+
+  &__square {
+    position: absolute;
+    
+    @media screen and (max-width: 767px) {
+      transform: rotate(-21.54deg);
+    }    
+
+    &--1 {
+      top: 59.73vw;
+      left: 1.33vw;
+
+      width: 7.73vw;
+      height: 7.73vw;
+      background-color: #FDE589;
+
+      @media screen and (min-width: 768px) {
+        top: 41.66vw;
+        left: 86.19vw;
+        
+        width: 7.68vw;
+        height: 7.68vw;
+        background-color: #30D4FE;
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: 27.01vw;
+        left: 7.08vw;
+        
+        width: 2.84vw;
+        height: 2.84vw;
+      }
+    }
+
+    &--2 {
+      top: 72.8vw;
+      right: -1.13vw;
+
+      width: 9.06vw;
+      height: 9.06vw;
+      background-color: #273CFD;
+
+      @media screen and (min-width: 768px) {
+        top: 101.43vw;
+        left: 7.42vw;
+        
+        width: 5.34vw;
+        height: 5.34vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: 15.07vw;
+        left: 43.47vw;
+        
+        width: 4.09vw;
+        height: 4.09vw;
+      }
+    }
+
+    &--3 {
+      top: 113.8vw;
+      left: 44.53vw;
+
+      width: 4.64vw;
+      height: 4.64vw;
+      background-color: #FC7387;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 1439px) {
+        transform: rotate(31.14deg);
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: 4.51vw;
+        left: 91.52vw;
+        
+        width: 3.75vw;
+        height: 3.75vw;
+      }
+    }
+  }
+}
