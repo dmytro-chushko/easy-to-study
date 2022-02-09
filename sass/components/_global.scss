@@ -1,11 +1,20 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 1.12;
 }
 
 h1,
-p {
+p, 
+ul, 
+li {
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 .button {
@@ -14,4 +23,40 @@ p {
   padding: 0;
 
   cursor: pointer;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 62.66vw;
+  height: 31.2vw;
+  margin: 0 auto;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  background-color: #0a0070;
+
+  font-weight: 700;
+  font-size: 5.33vw;
+  text-transform: uppercase;
+  color: $head-title;
+
+  @media screen and (min-width: 768px) {
+    width: 47.53vw;
+    height: 23.7vw;
+
+    font-size: 3.9vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 25.35vw;
+    height: 12.67vw;
+
+    font-size: 2.08vw;
+  }
+}
+
+.icon {
+  stroke: currentColor;
+  flex-shrink: 0;
 }

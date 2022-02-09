@@ -1,0 +1,19 @@
+@mixin circle($top, $left, $width, $height){
+  position: absolute;
+  top: $top;
+  left: $left;
+
+  width: $width;
+  height: $height;
+
+  border-radius: 50%;
+}
+
+@mixin square($top, $left, $width, $height) {
+  position: absolute;
+  top: $top;
+  left: $left;
+
+  width: $width;
+  height: $height;
+}

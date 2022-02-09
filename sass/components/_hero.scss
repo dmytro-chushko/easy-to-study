@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   padding-top: 21.33vw;
-  background-color: #0A0070;
+  background-color: $primary-bgc;
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
@@ -32,7 +32,7 @@
     font-weight: 700;
     font-size: 9.6vw;
     line-height: 1.12;
-    color: #FDE589;
+    color: $head-title;
     z-index: 1;
 
     @media screen and (min-width: 768px) {
@@ -77,7 +77,7 @@
     font-weight: 500;
     font-size: 4.8vw;
     line-height: 1.22;
-    color: #FFFFFF;
+    color: $accent-color;
 
     @media screen and (min-width: 768px) {
       width: 65.62vw;
@@ -121,100 +121,54 @@
   }
 
   &__circle {
-    position: absolute;
-    border-radius: 50%;
-
-    &--1 {
-      top: 18.9vw;
-      left: 6.66vw;
-
-      width: 15.46vw;
-      height: 15.46vw;
-      background-color: #8900FA;
-
+    
+    &--violet {
+      @include circle(18.9vw, 6.66vw, 15.46vw, 15.46vw);
+      background-color: $circle-violet;
+      
       @media screen and (min-width: 768px) {
-        top: 21.09vw;
-        left: 21.22vw;
-
-        width: 10.02vw;
-        height: 10.02vw;
+        @include circle(21.09vw, 21.22vw, 10.02vw, 10.02vw);
       }
 
       @media screen and (min-width: 1440px) {
-        top: 12.08vw;
-        left: 5.27vw;
-        
-        width: 5.34vw;
-        height: 5.34vw;
+        @include circle(12.08vw, 5.27vw, 5.34vw, 5.34vw);
       }
     }
 
-    &--2 {
-      top: 58.4vw;
-      left: 60.2vw;
-
-      width: 11.46vw;
-      height: 11.46vw;
-      background-color: #FC7387;
+    &--pink {
+      @include circle(58.04vw, 60.2vw, 11.46vw, 11.46vw);
+      background-color: $circle-pink;
 
       @media screen and (min-width: 768px) {
-        top: 55.46vw;
-        left: 25.13vw;
-
-        width: 3.64vw;
-        height: 3.64vw;
+        @include circle(55.46vw, 25.13vw, 3.64vw, 3.64vw);
       }
 
       @media screen and (min-width: 1440px) {
-        top: 32.29vw;
-        left: 23.95vw;
-        
-        width: 1.94vw;
-        height: 1.94vw;
+        @include circle(32.29vw, 23.95vw, 1.94vw, 1.94vw);
       }
     }
 
-    &--3 {
-      top: 77.6vw;
-      left: 25.33vw;
-
-      width: 14.13vw;
-      height: 14.13vw;
-      background-color: #30D4FE;
+    &--turquoise {
+      @include circle(77.6vw, 25.33vw, 14.13vw, 14.13vw);
+      background-color: $circle-turquoise;
       z-index: 1;
 
       @media screen and (min-width: 768px) {
-        top: 36.19vw;
-        left: 4.56vw;
-
-        width: 5.46vw;
-        height: 5.46vw;
+        @include circle(36.19vw, 4.56vw, 5.46vw, 5.46vw);
       }
 
       @media screen and (min-width: 1440px) {
-        top: 34.23vw;
-        left: 54.86vw;
-        
-        width: 2.91vw;
-        height: 2.91vw;
+        @include circle(34.23vw, 54.86vw, 2.91vw, 2.91vw);
       }
     }
 
-    &--4 {
-      top: 103.73vw;
-      left: 57.86vw;
-
-      width: 7.46vw;
-      height: 7.46vw;
-      background-color: #FDE589;
+    &--yellow {
+      @include circle(103.73vw, 57.86vw, 7.46vw, 7.46vw);
+      background-color: $circle-yellow;
       z-index: 1;
 
       @media screen and (min-width: 768px) {
-        top: 76.95vw;
-        left: 21.48vw;
-        
-        width: 5.46vw;
-        height: 5.46vw;
+        @include circle(76.95vw, 21.48vw, 5.46vw, 5.46vw);
       }
 
       @media screen and (min-width: 1440px) {
@@ -222,97 +176,60 @@
       }
     }
 
-    &--5 {
-      top: 81.33vw;
-      left: -3.73vw;
-
-      width: 107.46vw;
-      height: 107.46vw;
+    &--main {
+      @include circle(81.33vw, -3.73vw, 107.46vw, 107.46vw);
       background-image: linear-gradient(180deg, #8900FA 0%, #FC7387 100%);
 
       @media screen and (min-width: 768px) {
-        top: 56.38vw;
-        left: 48.69vw;
-        
-        width: 68.88vw;
-        height: 68.88vw;
+        @include circle(56.38vw, 48.69vw, 68.88vw, 68.88vw);
       }
 
       @media screen and (min-width: 1440px) {
-        top: 5.41vw;
-        left: 57.8vw;
-        
-        width: 41.11vw;
-        height: 41.11vw;
+        @include circle(5.41vw, 57.8vw, 41.11vw, 41.11vw);
       }
     }
   }
 
   &__square {
-    position: absolute;
     
-    @media screen and (max-width: 767px) {
-      transform: rotate(-21.54deg);
-    }    
+    &--yellow-turquoise {
+      @include square(59.73vw, 1.33vw, 7.73vw, 7.73vw);
+      background-color: $square-yellow;
 
-    &--1 {
-      top: 59.73vw;
-      left: 1.33vw;
-
-      width: 7.73vw;
-      height: 7.73vw;
-      background-color: #FDE589;
+      @media screen and (max-width: 767px) {
+        transform: rotate(-21.54deg);
+      }
 
       @media screen and (min-width: 768px) {
-        top: 41.66vw;
-        left: 86.19vw;
-        
-        width: 7.68vw;
-        height: 7.68vw;
-        background-color: #30D4FE;
+        @include square(41.66vw, 86.19vw, 7.68vw, 7.68vw);
+      background-color: $square-turquoise;
       }
 
       @media screen and (min-width: 1440px) {
-        top: 27.01vw;
-        left: 7.08vw;
-        
-        width: 2.84vw;
-        height: 2.84vw;
+        @include square(27.01vw, 7.08vw, 2.84vw, 2.84vw);
       }
     }
 
-    &--2 {
-      top: 72.8vw;
-      right: -1.13vw;
+    &--blue {
+      @include square(72.8vw, 91.5vw, 9.06vw, 9.06vw);
+      background-color: $square-blue;
 
-      width: 9.06vw;
-      height: 9.06vw;
-      background-color: #273CFD;
+      @media screen and (max-width: 767px) {
+        transform: rotate(-21.54deg);
+      }
 
       @media screen and (min-width: 768px) {
-        top: 101.43vw;
-        left: 7.42vw;
-        
-        width: 5.34vw;
-        height: 5.34vw;
+        @include square(101.43vw, 7.442vw, 5.34vw, 5.34vw);
       }
 
       @media screen and (min-width: 1440px) {
-        top: 15.07vw;
-        left: 43.47vw;
-        
-        width: 4.09vw;
-        height: 4.09vw;
+        @include square(15.07vw, 43.47vw, 4.09vw, 4.09vw);
       }
     }
 
-    &--3 {
-      top: 113.8vw;
-      left: 44.53vw;
-
-      width: 4.64vw;
-      height: 4.64vw;
-      background-color: #FC7387;
+    &--pink {
+      @include square(113.8vw, 44.53vw, 4.64vw, 4.64vw);
+        background-color: $square-pink;
 
       @media screen and (max-width: 767px) {
         display: none;
@@ -323,11 +240,7 @@
       }
 
       @media screen and (min-width: 1440px) {
-        top: 4.51vw;
-        left: 91.52vw;
-        
-        width: 3.75vw;
-        height: 3.75vw;
+        @include square(4.51vw, 91.52vw, 3.75vw, 3.75vw);
       }
     }
   }

@@ -1,0 +1,303 @@
+.advantages {
+  position: relative;
+
+  padding-bottom: 76px;
+  background-color: $accent-bgc;
+  overflow: hidden;
+
+  @media screen  and (min-width: 768px) {
+    padding-bottom: 23.11vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 10.42vw;
+    background-image: url(../images/advantages/why-bgi.svg);
+    background-repeat: no-repeat;
+    background-size: 22.4vw 35.15vw;
+    background-position: top 19.24vw left 2.84vw;
+  }
+
+  &__section-title {
+    margin-bottom: 14.13vw;
+    padding-bottom: 2vw;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 11.78vw;
+      padding-bottom: 1.17vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 2.18vw;
+      padding-bottom: 0.62vw;
+    }
+  }
+
+  &__list {
+    width: 75.2vw;
+    
+    @media screen and (max-width: 1439px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    @media screen and (min-width: 768px) {
+      width: 72.14vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 78.82vw;
+      margin-left: 16.87vw;
+    }
+  }
+
+  &__item {
+    display: flex;
+    
+    font-size: 4.8vw;
+    color: $secondary-text;
+
+    @media screen and (max-width: 1439px) {
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.86vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1.74vw;
+    }
+
+
+    &:not(:last-child) {
+      margin-bottom: 9.33vw;
+    }
+
+    &:nth-child(-n + 2)>.icon {
+      width: 12.26vw;
+      height: 16.53vw;
+    }
+
+    &:nth-child(3)>.icon {
+      width: 14.66vw;
+      height: 16.53vw;
+    }
+
+    &:nth-child(4)>.icon {
+      width: 15.46vw;
+      height: 14.66vw;
+    }
+
+    &:nth-child(5)>.icon {
+      width: 17.86vw;
+      height: 11.07vw;
+    }
+
+    &:nth-child(6)>.icon {
+      width: 15.73vw;
+      height: 14.13vw;
+    }
+
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 5.2vw;
+      }
+
+      &:nth-child(-n + 2)>.icon {
+        width: 5.99vw;
+        height: 8.07vw;
+      }
+
+      &:nth-child(3)>.icon {
+        width: 7.16vw;
+        height: 8.07vw;
+      }
+
+      &:nth-child(4)>.icon {
+        width: 7.55vw;
+        height: 7.16vw;
+      }
+
+      &:nth-child(5)>.icon {
+        width: 8.72vw;
+        height: 5.4vw;
+      }
+
+      &:nth-child(6)>.icon {
+        width: 7.68vw;
+        height: 6.9vw;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      &:not(:last-child) {
+        margin-bottom: 2.79vw;
+      }
+
+      &:nth-child(-n + 2)>.icon {
+        width: 3.19vw;
+        height: 4.29vw;
+      }
+
+      &:nth-child(2) {
+        padding-left: 5.83vw;
+      }
+
+      &:nth-child(3) {
+        padding-left: 10.42vw;
+
+        &>.icon {
+          width: 3.82vw;
+          height: 4.28vw;
+        }
+      }
+       
+      &:nth-child(4) {
+        padding-left: 16.11vw;
+
+        &>.icon {
+          width: 4.02vw;
+          height: 3.82vw;
+        }
+      }
+       
+      &:nth-child(5) {
+        padding-left: 20.62vw;
+
+        &>.icon {
+          width: 4.65vw;
+          height: 2.88vw;
+        }
+      }
+        
+
+      &:nth-child(6) {
+        padding-left: 26.6vw;
+
+        &>.icon {
+          width: 4.1vw;
+          height: 3.68vw;
+        }
+      }
+    }
+
+    &-text {
+      padding-top: 4vw;
+
+      @media screen and (max-width: 767px) {
+        width: 52.53vw;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        width: 61.07vw;
+        padding-top: 1.95vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-left: 1.32vw;
+        padding-top: 1.04vw;
+      }
+    }
+  }
+
+  // ----------- Decorative elements ----------- //
+
+  &__circle {
+    &--violet {
+      @include circle(26.4vw, -4.53vw, 15.73vw, 15.73vw);
+      background-color: $circle-violet;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--pink {
+      @include circle(76.8vw, 87.46vw, 9.6vw, 9.6vw);
+      background-color: $circle-pink;
+
+      @media screen and (min-width: 768px) {
+        @include circle(15.75vw, 7.16vw, 6.77vw, 6.77vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        display: none;
+      }
+    }
+
+    &--turquoise {
+      @include circle(167.46vw, -3.73vw, 16.26vw, 16.26vw);
+      background-color: $circle-turquoise;
+
+      @media screen and (min-width: 768px) {
+        @include circle(15.75vw, 85.28vw, 11.07vw, 11.07vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(31.53vw, 89.09vw, 3.82vw, 3.82vw);
+      }
+    }
+
+    &--dark-blue {
+      @include circle(105.33vw, 2.47vw, 6.77vw, 6.77vw);
+      background-color: $circle-dark-blue;
+
+      &+.advantages__circle--dark-blue {
+        top: 118.49vw;
+        left: 87.5vw;
+
+        @media screen and (min-width: 1440px) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(4.51vw, 91.94vw, 3.61vw, 3.61vw);
+      }
+    }
+  }
+
+  &__square {
+    &--blue {
+      @include square(166.2vw, 90.46vw, 12.89vw, 12.89vw);
+      background-color: $square-blue;
+      transform: rotate(19.82deg);
+
+      @media screen and (min-width: 768px) {
+        @include square(47.05vw, -3.56vw, 11.06vw, 10.54vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include square(13.19vw, 73.13vw, 5.90vw, 5.63vw);
+        transform: rotate(-17.68deg);
+      }
+    }
+
+    &--pink {
+
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        @include square(70.05vw, 91.45vw, 11.06vw, 10.54vw);
+        background-color: $square-pink;
+        transform: rotate(-17.68deg);
+      }      
+    }
+
+    &--violet {
+
+      @media screen and (min-width: 768px) {
+        @include square(123.87vw, 35.02vw, 8.09vw, 8.09vw);
+        background-color: $square-violet;
+        transform: rotate(-42.2deg);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include square(54.82vw, 91vw, 4.31vw, 4.31vw);
+      }      
+    }
+  }
+    
+}
