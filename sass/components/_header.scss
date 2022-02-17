@@ -51,19 +51,15 @@
     padding-bottom: 2.08vw;
     padding-left: 2.6vw;
     padding-right: 2.6vw;
-    background: #FC7387;
+    background: $primary-button;
     border-radius: 5.20vw;
-    box-shadow: 0 0 20px 5px rgb(252 115 135 / 50%);
+    box-shadow: 0 0 5.33vw 1.33vw rgb(252 115 135 / 50%);
     
     font-size: 2.08vw;
     line-height: 1.25;
     font-weight: 600;
     text-align: center;
     color: #FFFFFF;
-
-    &:hover {
-      box-shadow: none;
-    }
 
     @media screen and (max-width: 767px) {
       position: absolute;

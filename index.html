@@ -33,7 +33,8 @@
       <button class="button header__phone-menu-open" type="button"></button>
     </header>
     <main>
-      <section class="hero">
+      <!-- ================ HERO ================ -->
+      <section class="section hero">
         <div class="hero__wrapper">
           <div class="hero__title-wrapper">
             <h1 class="hero__title">Легко в учебе</h1>
@@ -41,7 +42,7 @@
           </div>
           <div class="hero__pic"></div>
         </div>
-        <!-- ================ Decorative elements ================-->
+        <!-- ================ Decorative elements ================ -->
         <div class="hero__circle--violet"></div>
         <div class="hero__circle--pink"></div>
         <div class="hero__circle--turquoise"></div>
@@ -51,8 +52,9 @@
         <div class="hero__square--blue"></div>
         <div class="hero__square--pink"></div>
       </section>
-      <section class="advantages">
-        <h2 class="section-title advantages__section-title">Почему мы?</h2>
+      <!-- ================ ADVANTAGES ================ -->
+      <section class="section advantages">
+        <h2 class="section__title advantages__title">Почему мы?</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <svg class="icon">
@@ -100,6 +102,148 @@
         <div class="advantages__square--blue"></div>
         <div class="advantages__square--violet"></div>
         <div class="advantages__square--pink"></div>
+      </section>
+      <!-- ================ MATERIALS ================ -->
+      <section class="section materials">
+        <h2 class="section__title materials__title">Помощь с учебными работами</h2>
+        <p class="materials__descriptions">
+          Специалисты найдут материалы для вашей работы, проконсультируют по оформлению, научат
+          работать с аниплагиатом, подготовят к защите. Вы получите результат в максимально короткий
+          срок! С нами учиться легко!
+        </p>
+        <ul class="materials__list">
+          <li class="materials__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/materials/first-pic_base.png    1x,
+                  ./images/materials/first-pic_base@2x.png 2x,
+                  ./images/materials/first-pic_base@3x.png 3x
+                "
+                media="(max-width: 375px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/first-pic_mobile.png    1x,
+                  ./images/materials/first-pic_mobile@2x.png 2x,
+                  ./images/materials/first-pic_mobile@3x.png 3x
+                "
+                media="(max-width: 580px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/first-pic_sample.png    1x,
+                  ./images/materials/first-pic_sample@2x.png 2x,
+                  ./images/materials/first-pic_sample@3x.png 3x
+                "
+                media="(min-width: 580px and max-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/first-pic_hq.png    1x,
+                  ./images/materials/first-pic_hq@2x.png 2x
+                "
+                media="(min-width: 1441px)"
+              />
+              <img
+                src="./images/materials/first-pic_sample.png"
+                alt="Первая иллюстрация материалов"
+              />
+            </picture>
+          </li>
+          <li class="materials__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/materials/second-pic_base.png    1x,
+                  ./images/materials/second-pic_base@2x.png 2x,
+                  ./images/materials/second-pic_base@3x.png 3x
+                "
+                media="(max-width: 375px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/second-pic_mobile.png    1x,
+                  ./images/materials/second-pic_mobile@2x.png 2x,
+                  ./images/materials/second-pic_mobile@3x.png 3x
+                "
+                media="(max-width: 580px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/second-pic_sample.png    1x,
+                  ./images/materials/second-pic_sample@2x.png 2x,
+                  ./images/materials/second-pic_sample@3x.png 3x
+                "
+                media="(min-width: 581px and max-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/second-pic_hq.png    1x,
+                  ./images/materials/second-pic_hq@2x.png 2x
+                "
+                media="(min-width: 1441px)"
+              />
+              <img
+                src="./images/materials/second-pic_sample.png"
+                alt="Вторая иллюстрация материалов"
+              />
+            </picture>
+          </li>
+          <li class="materials__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/materials/third-pic_base.png    1x,
+                  ./images/materials/third-pic_base@2x.png 2x,
+                  ./images/materials/third-pic_base@3x.png 3x
+                "
+                media="(max-width: 375px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/third-pic_mobile.png    1x,
+                  ./images/materials/third-pic_mobile@2x.png 2x,
+                  ./images/materials/third-pic_mobile@3x.png 3x
+                "
+                media="(max-width: 580px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/third-pic_sample.png    1x,
+                  ./images/materials/third-pic_sample@2x.png 2x,
+                  ./images/materials/third-pic_sample@3x.png 3x
+                "
+                media="(min-width: 581px and max-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./images/materials/third-pic_hq.png    1x,
+                  ./images/materials/third-pic_hq@2x.png 2x
+                "
+                media="(min-width: 1441px)"
+              />
+              <img
+                src="./images/materials/third-pic_sample.png"
+                alt="Третья иллюстрация материалов"
+              />
+            </picture>
+          </li>
+        </ul>
+        <button class="button button--pink materials__button" type="button">Подробнее</button>
+        <!-- ================ Decorative elements ================ -->
+        <div class="materials__dec-line"></div>
+        <ul class="materials__dec-list">
+          <li class="materials__dec-item">
+            <span class="materials__dec-text">Быстро</span>
+          </li>
+          <li class="materials__dec-item">
+            <span class="materials__dec-text">Качественно</span>
+          </li>
+          <li class="materials__dec-item">
+            <span class="materials__dec-text">Индивидуально</span>
+          </li>
+        </ul>
       </section>
     </main>
   </body>

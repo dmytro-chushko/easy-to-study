@@ -1,10 +1,7 @@
 .advantages {
-  position: relative;
-
   padding-bottom: 76px;
   background-color: $accent-bgc;
-  overflow: hidden;
-
+  
   @media screen  and (min-width: 768px) {
     padding-bottom: 23.11vw;
   }
@@ -17,9 +14,13 @@
     background-position: top 19.24vw left 2.84vw;
   }
 
-  &__section-title {
+  &__title {
     margin-bottom: 14.13vw;
     padding-bottom: 2vw;
+
+    background-color: $primary-bgc;
+
+    color: $head-title;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 11.78vw;
@@ -289,7 +290,7 @@
     &--violet {
 
       @media screen and (min-width: 768px) {
-        @include square(123.87vw, 35.02vw, 8.09vw, 8.09vw);
+        @include square(122.87vw, 35.02vw, 8.09vw, 8.09vw);
         background-color: $square-violet;
         transform: rotate(-42.2deg);
       }

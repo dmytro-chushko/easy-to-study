@@ -1,9 +1,7 @@
 .hero {
-  position: relative;
   padding-top: 21.33vw;
   background-color: $primary-bgc;
-  overflow: hidden;
-
+  
   @media screen and (min-width: 768px) {
     padding-top: 22.52vw;
   }
@@ -178,7 +176,7 @@
 
     &--main {
       @include circle(81.33vw, -3.73vw, 107.46vw, 107.46vw);
-      background-image: linear-gradient(180deg, #8900FA 0%, #FC7387 100%);
+      background-image: linear-gradient(180deg, $gradient-start 0%, $gradient-end 100%);
 
       @media screen and (min-width: 768px) {
         @include circle(56.38vw, 48.69vw, 68.88vw, 68.88vw);
