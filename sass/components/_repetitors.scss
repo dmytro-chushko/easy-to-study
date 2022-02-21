@@ -1,0 +1,42 @@
+.repetitors {
+  padding-left: 12.27vw;
+  padding-right: 12.27vw;
+  padding-bottom: 117.6vw;
+  background-color: $primary-bgc;
+
+  &__title {
+    margin-bottom: 15.47vw;
+    padding-bottom: 4.73vw;
+    background-color: $secondary-bgc;
+
+    color: $secondary-text;
+  }
+
+  &__button {
+    width: 67.73vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__list {
+    position: absolute;
+    right: 0;
+    bottom: 10.13vw;
+  }
+
+  &__item {
+    width: 74.67vw;
+    padding-top: 5.6vw;
+    padding-bottom: 5.6vw;
+    border-radius: 10.67vw 0 0 10.67vw;
+    background-color: $list-item-bgc;
+    background-image: url(../images/repetitors/frame.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 4.27vw;
+    color: $list-text;
+  }
+}

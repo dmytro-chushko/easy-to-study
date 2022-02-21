@@ -1,0 +1,252 @@
+.tutorial {
+  padding-left: 3.46vw;
+  padding-right: 3.46vw;
+  padding-bottom: 12.8vw;
+  background-color: $secondary-bgc;
+  background-image: url(../images/tutorial/tutorial-owl_mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top 111.5vw right 0;
+  background-size: 32.14vw;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 3.26vw;
+    padding-right: 3.26vw;
+    padding-bottom: 9.63vw;
+    background-image: url(../images/tutorial/tutorial-owl_tablet.svg);
+    background-position: top 57.42vw right 0;
+    background-size: 26.14vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 11.04vw;
+    padding-right: 11.04vw;
+    padding-bottom: 11.018vw;
+    background-position: top 39.42vw right 0;
+    background-size: 20.14vw;
+  }
+
+  &__title {
+    margin-bottom: 15.13vw;
+    padding-left: 14.13vw;
+    padding-right: 14.13vw;
+    padding-bottom: 1.47vw;
+    background-color: $primary-bgc;
+
+    color: $secondary-title;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0.58vw;
+      padding-left: 9.5vw;
+      padding-right: 9.5vw;
+      padding-bottom: 2.73vw;      
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 4.58vw;
+      padding-left: 5.07vw;
+      padding-right: 5.07vw;
+      padding-bottom: 1.94vw;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: -5.33vw -1.87vw;
+    margin-bottom: 21.68vw;
+
+    @media screen and (min-width: 768px) {
+      margin: -1.63vw;
+      margin-bottom: 13.66vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: -1.53vw;
+      margin-bottom: 12.16vw;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: calc((100% - 7.48vw)/2);
+    margin: 5.33vw 1.87vw;
+    padding-left: 2.67vw;
+    padding-right: 2.67vw;
+    padding-top: 8vw;
+    padding-bottom: 21.33vw;
+    border-radius: 5.33vw;
+    background-color: $item-bgc;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 9.78vw)/3);
+      margin: 1.63vw;
+      padding-left: 2.6vw;padding-right: 2.6vw;
+      padding-top: 4.56vw;
+      padding-bottom: 18.1vw;
+      border-radius: 3.9vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: calc((100% - 9.18vw)/3);
+      margin: 1.53vw;
+      padding-left: 2.08vw;
+      padding-right: 2.08vw;
+      padding-bottom: 14.35vw;
+      border-radius: 2.08vw;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10.93vw;
+      left: 0;
+
+      display: block;
+      width: 11.46vw;
+      height: 21.6vw;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto 13.6vw;
+      
+      @media screen and (min-width: 768px) {
+        top: -7.03vw;
+
+        width: 8vw;
+        height: 14.06vw;
+        background-size: auto 9.5vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: -5.35vw;
+
+        width: 7.3vw;
+        height: 11.25vw;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+
+      display: block;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media screen and (min-width: 768px) {
+        background-size: contain;
+      }
+    }
+
+    &--first-part {
+
+      &:nth-child(1) {
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 7.03vw;
+        }
+
+        @media screen and (min-width: 1440px) {
+          margin-bottom: 6.11vw;
+        }
+        
+        &::before {
+          width: 7.73vw;
+
+          background-image: url(../images/tutorial/num-one.svg);
+          
+          @media screen and (min-width: 768px) {
+            width: 4.95vw;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 4.3vw;
+          }
+        }
+
+        &::after {
+          width: 16.26vw;
+          height: 21.6vw;
+          background-image: url(../images/tutorial/icon-one.svg);
+
+          @media screen and (min-width: 768px) {
+            width: 13.54vw;
+            height: 17.97vw;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 10.7vw;
+            height: 14.24vw;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+
+        @media screen and (min-width: 768px) {
+          margin-top: 7.03vw;
+        }
+
+        @media screen and (min-width: 1440px) {
+          margin-top: 6.11vw;
+        }
+
+        &::before {
+          background-image: url(../images/tutorial/num-two.svg);
+        }
+
+        &::after {
+          width: 25.92vw;
+          height: 18.93vw;
+          background-image: url(../images/tutorial/icon-two.svg);
+
+          @media screen and (min-width: 768px) {
+            width: 21.09vw;
+            height: 15.40vw;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 17.08vw;
+            height: 12.5vw;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 7.03vw;
+        }
+
+        @media screen and (min-width: 1440px) {
+          margin-bottom: 6.11vw;
+        }
+
+        &::before {
+          background-image: url(../images/tutorial/num-three.svg);
+        }
+
+        &::after {
+          width: 18.93vw;
+          height: 21.39vw;
+          background-image: url(../images/tutorial/icon-three.svg);
+
+          @media screen and (min-width: 768px) {
+            width: 15.8vw;
+            height: 17.88vw;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 14.56vw;
+            height: 15.04vw;
+          }
+        }
+      }
+    }  
+  }
+}
+

@@ -10,11 +10,11 @@
   background-repeat: no-repeat;
 
   @media screen and (min-width: 768px) {
-    padding-left: 3.13vw;
-    padding-right: 3.13vw;
+    padding-left: 17.51vw;
+    padding-right: 17.51vw;
     padding-bottom: 27.34vw;
 
-    background-size: 42.58vw 25.65vw;
+    background-size: 48.58vw 25.65vw;
     background-position: left bottom;
   }
 
@@ -32,7 +32,7 @@
     padding-bottom: 2.35vw;
     background-color: $accent-bgc;
 
-    text-align: center;
+    
     color: $primary-title;
 
     @media screen and (min-width: 768px) {
@@ -41,36 +41,6 @@
 
     @media screen and (min-width: 1440px) {
       margin-bottom: 4.7vw;
-    }
-  }
-
-  &__descriptions {
-    width: 88.27vw;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 1.6vw;
-
-    font-weight: 600;
-    font-size: 4.26vw;
-    color: $accent-color;
-
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 64.97vw;
-      margin-bottom: 1.04vw;
-
-      font-size: 3.12vw;
-    }
-
-    @media screen and (min-width: 1440px) {
-      width: 47.15vw;
-      margin-left: 0;
-      margin-bottom: 2.22vw;
-
-      font-size: 1.9vw;
     }
   }
 
@@ -83,13 +53,14 @@
       position: relative;
       width: 78.66vw;
       height: 88.53vw;
-
     }
 
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
 
+      margin-left: -14.38vw;
+      margin-right: -14.38vw;
       margin-bottom: 2.92vw;
       
     }
@@ -162,37 +133,11 @@
 
   // ----------- Decorative elements ----------- //
 
-  &__dec-line {
-    position: absolute;
-    top: 39.8vw;
-    left: 0;
-
-    width: 61vw;
-    height: 2.67vw;
-    border-radius: 0 1.33vw 1.33vw 0;
-    background-image: linear-gradient(to right, $gradient-start, $gradient-end);
-
-    @media screen and (min-width: 768px) {
-      top: 28.8vw;
-
-      width: 49vw;
-    }
-
-    @media screen and (min-width: 1440px) {
-      top: 12.8vw;
-
-      width: 28.7vw;
-      height: 1.4vw;
-    }
-  }
-
   &__dec-list {
     position: absolute;
     right: 0;
     bottom: 5.08vw;
 
-    // width: 41.02vw;
-    // height: 17.97vw;
     @media screen and (max-width: 767px) {
       display: none;
     }

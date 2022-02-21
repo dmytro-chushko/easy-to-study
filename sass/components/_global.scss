@@ -1,8 +1,21 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 3.73vw;
   line-height: 1.12;
+  color: $primary-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.34vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.67vw;
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 a {
@@ -10,6 +23,7 @@ a {
 }
 
 h1,
+h2,
 p,
 ul,
 li {
@@ -81,6 +95,7 @@ img {
     margin: 0 auto;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
 
+    text-align: center;
     font-weight: 700;
     font-size: 5.33vw;
     text-transform: uppercase;
@@ -99,9 +114,59 @@ img {
       font-size: 2.08vw;
     }
   }
+
+  &__description {
+    margin-bottom: 4vw;
+
+    font-weight: 600;
+    font-size: 4.26vw;
+    color: $accent-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 1.04vw;
+
+      font-size: 3.12vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 47.15vw;
+      margin-left: 0;
+      margin-bottom: 2.22vw;
+
+      font-size: 1.9vw;
+    }
+  }
 }
 
 .icon {
   stroke: currentColor;
   flex-shrink: 0;
+}
+
+.decorative-line {
+  position: absolute;
+  top: 39.8vw;
+  left: 0;
+
+  width: 61vw;
+  height: 2.67vw;
+  border-radius: 0 1.33vw 1.33vw 0;
+  background-image: linear-gradient(to right, $gradient-start, $gradient-end);
+
+  @media screen and (min-width: 768px) {
+    top: 28.8vw;
+
+    width: 49vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 12.8vw;
+
+    width: 28.7vw;
+    height: 1.4vw;
+  }
 }

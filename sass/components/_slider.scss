@@ -1,0 +1,193 @@
+.slider {
+  position: relative;
+
+  &__lable {
+    display: block;
+    margin-bottom: 6.13vw;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 4.8vw;
+    color: $secondary-text;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 3.77vw;
+
+      font-size: 3.13vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 5vw;
+
+      font-size: 2.08vw;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 62.4vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      width: 64.97vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 77.9vw;
+    }
+  }
+
+  &__element {
+      width: 62.93vw;
+      margin-left: 3.2vw;
+      margin-right: 3.2vw;
+
+    @media screen and (min-width: 768px) {
+      width: 30.47vw;
+      margin-left: 2.6vw;
+      margin-right: 2.6vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 16.25vw;
+      margin-left: 1.6vw;
+      margin-right: 1.6vw;
+    }
+  }
+
+  &__img-thumb {
+    position: relative;
+
+    width: 56vw;
+    height: 56vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4.8vw;
+    border-radius: 8vw;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      width: 27.34vw;
+      height: 27.34vw;
+      margin-bottom: 2.34vw;
+      border-radius: 3.9vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 15.97vw;
+      height: 15.97vw;
+      margin-bottom: 2.43vw;
+      border-radius: 2.08vw;
+    }
+  }
+
+  &__img-lable {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    padding-top: 1.6vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 8vw 0 8vw 0;
+    background-color: $lable-bgc;
+
+    color: $secondary-text;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0.78vw;
+      padding-left: 2.34vw;padding-right: 2.34vw;
+      border-radius: 3.9vw 0 3.9vw 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+      border-radius: 2.08vw 0 2.08vw 0;
+    }
+  }
+
+  &__descr {
+    text-align: center;
+    font-weight: 600;
+    color: $secondary-text;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.87vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1.11vw;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    left: 0;
+    bottom: 34.4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 10.67vw;
+    height: 10.67vw;
+    border-radius: 50%;    background-color: $slider-button;
+
+    @media screen and (min-width: 768px) {
+      bottom: 19.69vw;
+      left: 2.86vw;
+
+      width: 8.46vw;
+      height: 8.46vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      bottom: 12.7vw;
+      left: -5.76vw;
+
+      width: 5.49vw;
+      height: 5.49vw;
+    }
+
+    &+.slider__button {
+      right: 0;
+      left: auto;
+
+      @media screen and (min-width: 768px) {
+        right: 2.86vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        right: -5.76vw;
+      }
+
+      &>.slider__icon {
+        padding-right: 0;
+        padding-left: 1vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        padding-right: 0.4vw;
+      }
+    }
+  }
+
+  &__icon {
+    width: 4.43vw;
+    height: 5.73vw;
+    padding-right: 1vw;
+
+    @media screen and (min-width: 768px) {
+      width: 3.92vw;
+      height: 4.3vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 3.25vw;
+      height: 2.43vw;
+      padding-right: 0.4vw;
+    }
+  }
+}
