@@ -5,9 +5,13 @@ body {
   line-height: 1.12;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
-p, 
-ul, 
+p,
+ul,
 li {
   margin: 0;
   padding: 0;
@@ -42,7 +46,7 @@ img {
     border-radius: 10.67vw;
     background-color: $primary-button;
     box-shadow: 0 0 5.33vw 1.33vw rgb(252 115 135 / 50%);
-    
+
     font-weight: 600;
     font-size: 4.27vw;
     color: $accent-color;
@@ -76,11 +80,11 @@ img {
     height: 31.2vw;
     margin: 0 auto;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    
+
     font-weight: 700;
     font-size: 5.33vw;
     text-transform: uppercase;
-    
+
     @media screen and (min-width: 768px) {
       width: 47.53vw;
       height: 22.7vw;
