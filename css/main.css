@@ -21,6 +21,7 @@ a {
 }
 
 h1,
+h2,
 p,
 ul,
 li {
@@ -112,11 +113,60 @@ img {
     font-size: 2.08vw;
   }
 }
+.section__description {
+  margin-bottom: 4vw;
+  font-weight: 600;
+  font-size: 4.26vw;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .section__description {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__description {
+    margin-bottom: 1.04vw;
+    font-size: 3.12vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section__description {
+    width: 47.15vw;
+    margin-left: 0;
+    margin-bottom: 2.22vw;
+    font-size: 1.9vw;
+  }
+}
 
 .icon {
   stroke: currentColor;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.decorative-line {
+  position: absolute;
+  top: 39.8vw;
+  left: 0;
+  width: 61vw;
+  height: 2.67vw;
+  border-radius: 0 1.33vw 1.33vw 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8900FA), to(#FC7387));
+  background-image: linear-gradient(to right, #8900FA, #FC7387);
+}
+@media screen and (min-width: 768px) {
+  .decorative-line {
+    top: 28.8vw;
+    width: 49vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .decorative-line {
+    top: 12.8vw;
+    width: 28.7vw;
+    height: 1.4vw;
+  }
 }
 
 .header {
@@ -1038,8 +1088,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .materials {
-    padding-left: 3.13vw;
-    padding-right: 3.13vw;
+    padding-left: 17.51vw;
+    padding-right: 17.51vw;
     padding-bottom: 27.34vw;
     background-size: 48.58vw 25.65vw;
     background-position: left bottom;
@@ -1070,35 +1120,6 @@ img {
     margin-bottom: 4.7vw;
   }
 }
-.materials__descriptions {
-  width: 88.27vw;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 1.6vw;
-  font-weight: 600;
-  font-size: 4.26vw;
-  color: #FFFFFF;
-}
-@media screen and (max-width: 767px) {
-  .materials__descriptions {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .materials__descriptions {
-    width: 64.97vw;
-    margin-bottom: 1.04vw;
-    font-size: 3.12vw;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .materials__descriptions {
-    width: 47.15vw;
-    margin-left: 0;
-    margin-bottom: 2.22vw;
-    font-size: 1.9vw;
-  }
-}
 .materials__list {
   margin-bottom: 4.27vw;
   margin-left: auto;
@@ -1119,6 +1140,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: -14.38vw;
+    margin-right: -14.38vw;
     margin-bottom: 2.92vw;
   }
 }
@@ -1181,29 +1204,6 @@ img {
 @media screen and (min-width: 1440px) {
   .materials__button {
     width: 13.82vw;
-  }
-}
-.materials__dec-line {
-  position: absolute;
-  top: 39.8vw;
-  left: 0;
-  width: 61vw;
-  height: 2.67vw;
-  border-radius: 0 1.33vw 1.33vw 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#8900FA), to(#FC7387));
-  background-image: linear-gradient(to right, #8900FA, #FC7387);
-}
-@media screen and (min-width: 768px) {
-  .materials__dec-line {
-    top: 28.8vw;
-    width: 49vw;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .materials__dec-line {
-    top: 12.8vw;
-    width: 28.7vw;
-    height: 1.4vw;
   }
 }
 .materials__dec-list {
@@ -1741,4 +1741,41 @@ img {
     height: 2.43vw;
     padding-right: 0.4vw;
   }
+}
+
+.repetitors {
+  padding-left: 12.27vw;
+  padding-right: 12.27vw;
+  padding-bottom: 117.6vw;
+  background-color: #0A0070;
+}
+.repetitors__title {
+  margin-bottom: 15.47vw;
+  padding-bottom: 4.73vw;
+  background-color: #B8E2ED;
+  color: #0A0070;
+}
+.repetitors__button {
+  width: 67.73vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.repetitors__list {
+  position: absolute;
+  right: 0;
+  bottom: 10.13vw;
+}
+.repetitors__item {
+  width: 74.67vw;
+  padding-top: 5.6vw;
+  padding-bottom: 5.6vw;
+  border-radius: 10.67vw 0 0 10.67vw;
+  background-color: rgba(95, 40, 120, 0.31);
+  background-image: url(../images/repetitors/frame.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4.27vw;
+  color: #FC7387;
 }/*# sourceMappingURL=main.css.map */

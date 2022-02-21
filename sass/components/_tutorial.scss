@@ -109,13 +109,7 @@
       background-repeat: no-repeat;
       background-position: left center;
       background-size: auto 13.6vw;
-      // font-family: 'Sora',
-      // sans-serif;
-      // font-weight: 700;
-      // font-size: 19.2vw;
-      // -webkit-text-fill-color: transparent;
-      // -webkit-text-stroke: 2px #273CFD;
-
+      
       @media screen and (min-width: 768px) {
         top: -7.03vw;
 
@@ -161,13 +155,8 @@
         }
         
         &::before {
-          // content: "1";
           width: 7.73vw;
 
-          // font-weight: 700;
-          // font-size: 19.2vw;
-          // -webkit-text-fill-color: transparent;
-          // -webkit-text-stroke: 2px #273CFD;
           background-image: url(../images/tutorial/num-one.svg);
           
           @media screen and (min-width: 768px) {
@@ -207,7 +196,6 @@
         }
 
         &::before {
-          // content: "2";
           background-image: url(../images/tutorial/num-two.svg);
         }
 
@@ -240,7 +228,6 @@
 
         &::before {
           background-image: url(../images/tutorial/num-three.svg);
-          // content: "3";
         }
 
         &::after {
