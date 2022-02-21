@@ -3,7 +3,7 @@ body {
   font-weight: 500;
   font-size: 3.73vw;
   line-height: 1.12;
-  color: $primary-text;  
+  color: $primary-text;
 
   @media screen and (min-width: 768px) {
     font-size: 2.34vw;
@@ -18,10 +18,14 @@ a {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
-p, 
-ul, 
+p,
+ul,
 li {
   margin: 0;
   padding: 0;
@@ -56,7 +60,7 @@ img {
     border-radius: 10.67vw;
     background-color: $primary-button;
     box-shadow: 0 0 5.33vw 1.33vw rgb(252 115 135 / 50%);
-    
+
     font-weight: 600;
     font-size: 4.27vw;
     color: $accent-color;
@@ -90,12 +94,12 @@ img {
     height: 31.2vw;
     margin: 0 auto;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    
+
     text-align: center;
     font-weight: 700;
     font-size: 5.33vw;
     text-transform: uppercase;
-    
+
     @media screen and (min-width: 768px) {
       width: 47.53vw;
       height: 22.7vw;
