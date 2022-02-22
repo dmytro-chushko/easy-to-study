@@ -3,6 +3,25 @@
   padding-right: 12.27vw;
   padding-bottom: 117.6vw;
   background-color: $primary-bgc;
+  background-image: url(../images/repetitors/repetitors-owl.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 61.06vw;
+
+  @media screen and (min-width:768px) {
+    padding-left: 17.51vw;
+    padding-right: 17.51vw;
+    padding-bottom: 67.58vw;
+    background-size: 57.29vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 16.88vw;
+    padding-right: 16.88vw;
+    padding-bottom: 24.51vw;
+    background-position: 18.54vw bottom;
+    background-size: 27.5vw;
+  }
 
   &__title {
     margin-bottom: 15.47vw;
@@ -10,33 +29,141 @@
     background-color: $secondary-bgc;
 
     color: $secondary-text;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10.68vw;
+      padding-bottom: 5.21vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 5.69vw;
+    }
   }
 
   &__button {
-    width: 67.73vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 37.89vw;
+
+    @media screen and (max-width: 767px) {
+      width: 67.73vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 22.22vw;
+      margin-left: 16.94vw;
+    }
   }
 
   &__list {
     position: absolute;
     right: 0;
     bottom: 10.13vw;
+
+    @media screen and (min-width: 768px) {
+      right: 0.39vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      right: 7.47vw;
+      bottom: 12.04vw;
+    }
   }
 
   &__item {
     width: 74.67vw;
-    padding-top: 5.6vw;
-    padding-bottom: 5.6vw;
-    border-radius: 10.67vw 0 0 10.67vw;
-    background-color: $list-item-bgc;
-    background-image: url(../images/repetitors/frame.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-
+        
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: 40.89vw;
+
+      &:not(:last-child) {
+        margin-bottom: 0.39vw;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 24.51vw;
+
+      &:not(:last-child) {
+        margin-bottom: 0.2vw;
+      }
+    }
+  }
+
+  &__link { 
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+        
     font-weight: 600;
-    font-size: 4.27vw;
-    color: $list-text;
+    font-size: 2.34vw;
+    color: $repetitors-list-text;
+    
+    &:hover {
+      &>span {
+        background-color: $hover-repetitors-item-bgc;
+        color: $accent-color;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-color: $hover-repetitors-item-bgc;
+        color: $accent-color;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-top: 5.6vw;
+      padding-bottom: 5.6vw;
+      border-radius: 10.67vw 0 0 10.67vw;
+      background-color: $repetitors-item-bgc;
+      background-image: url(../images/repetitors/frame.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      font-size: 4.27vw;
+    }
+
+    &>span {
+      @media screen and (min-width:768px) {
+        position: relative;
+        z-index: 1;
+
+        display: block;
+        padding-top: 3.13vw;
+        padding-bottom: 3.13vw;
+        background-color: $primary-bgc;
+        border-radius: 10.67vw 0 0 10.67vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        padding-top: 1.9vw;
+        padding-bottom: 1.9vw;  
+
+        font-size: 1.39vw;
+      }
+    }
+        
+    &::after {
+      @media screen and (min-width:768px) {
+        content: "";
+        position: absolute;
+        top: -0.39vw;
+        left: -0.39vw;
+        right: -0.39vw;
+        bottom: -0.39vw;
+        border-radius: 10.67vw 0 0 10.67vw;
+        background-image: linear-gradient(to right, $gradient-end, $gradient-start);
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: -0.2vw;
+        left: -0.2vw;
+        right: -0.2vw;
+        bottom: -0.2vw;
+      }
+    }
   }
 }

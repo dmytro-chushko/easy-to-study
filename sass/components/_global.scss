@@ -15,10 +15,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-}
-
-a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -133,7 +130,7 @@ img {
     }
 
     @media screen and (min-width: 1440px) {
-      width: 47.15vw;
+      width: 46.15vw;
       margin-left: 0;
       margin-bottom: 2.22vw;
 
