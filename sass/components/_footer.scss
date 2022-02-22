@@ -274,7 +274,7 @@
 
     @media screen and (min-width: 768px) {
       display: block;
-      margin-bottom: 14.13vw;
+      margin-bottom: 2.38vw;
       margin-right: auto;
       margin-left: auto;
     }
@@ -283,16 +283,15 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      margin: -1.73vw;
+      margin: -0.61vw;
       margin-bottom: 0;
-      width: 17.56vw;
-      height: 16.18vw;
+      height: 17.18vw;
     }
   }
 
   &__payment-item {
     margin: 3.2vw;
-    margin-bottom: 8vw;
+    margin-bottom: 4.8vw;
 
     @media screen and (min-width: 768px) {
       margin-right: 0;
@@ -300,14 +299,98 @@
     }
 
     @media screen and (min-width: 1440px) {
-      margin-bottom: 1.73vw;
-      margin: 1.73vw;
+      margin: 0.61vw;
+      margin-bottom: 0.61vw;
+    }
+
+    &--margin {
+      margin-top: 0.58vw;
+    }
+
+    &--margin + .footer__payment-item {
+      margin-top: 0.96vw;
+      margin-bottom: 0;
     }
   }
 
   &__payment-img {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  &__payment-visa {
+    width: 15.93vw;
+    height: 9.59vw;
+
+    @media screen and (min-width: 768px) {
+      width: 14.29vw;
+      height: 8.6vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 7.62vw;
+      height: 4.58vw;
+    }
+  }
+
+  &__payment-privat {
+    width: 10.67vw;
+    height: 9.99vw;
+
+    @media screen and (min-width: 768px) {
+      width: 10.77vw;
+      height: 8.96vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 5.74vw;
+      height: 4.78vw;
+    }
+  }
+
+  &__payment-mastercard {
+    width: 16.46vw;
+    height: 10.66vw;
+
+    @media screen and (min-width: 768px) {
+      width: 14.77vw;
+      height: 9.57vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 7.88vw;
+      height: 5.1vw;
+    }
+  }
+
+  &__payment-world {
+    width: 16.46vw;
+    height: 5.13vw;
+
+    @media screen and (min-width: 768px) {
+      width: 14.77vw;
+      height: 4.6vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 7.88vw;
+      height: 2.45vw;
+    }
+  }
+
+  &__payment-liqpay {
+    width: 18.21vw;
+    height: 3.78vw;
+
+    @media screen and (min-width: 768px) {
+      width: 16.35vw;
+      height: 3.39vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 8.72vw;
+      height: 1.8vw;
+    }
   }
 
   &__copyright-text {
@@ -333,24 +416,36 @@
 
 .icon__chat {
   margin-left: 2.93vw;
+  width: 17.33vw;
+  height: 17.33vw;
 
   @media screen and (min-width: 768px) {
     margin-left: 1.43vw;
+    width: 8.46vw;
+    height: 8.46vw;
   }
 
   @media screen and (min-width: 1440px) {
     margin-left: 0.76vw;
+    width: 4.51vw;
+    height: 4.51vw;
   }
 }
 
 .icon__mail {
   margin-left: 2.13vw;
+  width: 6.66vw;
+  height: 5.55vw;
 
   @media screen and (min-width: 768px) {
     margin-left: 1.04vw;
+    width: 3.25vw;
+    height: 2.71vw;
   }
 
   @media screen and (min-width: 1440px) {
     margin-left: 0.55vw;
+    width: 1.73vw;
+    height: 1.44vw;
   }
 }
