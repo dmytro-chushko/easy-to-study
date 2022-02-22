@@ -709,7 +709,28 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- =============== INFORMATIONAL SUPPORT =============== -->
+
+    <section class="section support">
+      <h2 class="section__title support__title">Информационная поддержка</h2>
+
+      <p>
+        Образовательный центр «Легко в учебе» предоставляет информационные услуги: консультирование,
+        подбор, обработку и систематизацию материала по предложенной теме, помощь в защите, проверку
+        на уникальность.
+      </p>
+      <p>
+        Результат предоставленной услуги не является готовым научным трудом, но может служить
+        источником для его написания.
+      </p>
+      <p>
+        Обращаем ваше внимание, «Легко в учебе» не продает научную степень, дипломы, аттестаты об
+        образовании и иные документы о высшем образовании. Все услуги предоставляются в рамках
+        действующего законодательства.
+      </p>
+    </section>
+
+    <!-- ==================== FOOTER ======================-->
 
     <footer class="footer">
       <div class="footer__wrapper">
@@ -741,14 +762,14 @@
         <div class="footer__part-second">
           <p class="footer__title footer__title--flex">
             Связаться с нами
-            <svg class="icon__chat" width="65" height="65">
+            <svg class="icon__chat">
               <use href="images/footer/footer-icons.svg#icon-chat"></use>
             </svg>
           </p>
 
           <a class="footer__link footer__link--flex" href="mailto:support@legko-v-uchebe.com"
             >support@legko-v-uchebe.com
-            <svg class="icon__mail" width="25" height="20.83">
+            <svg class="icon__mail">
               <use href="images/footer/footer-icons.svg#icon-mail"></use>
             </svg>
           </a>
@@ -761,32 +782,120 @@
           <p class="footer__title footer__title--position">Принимаем к оплате</p>
           <ul class="footer__payment-list">
             <li class="footer__payment-item">
-              <a href=""
-                ><img class="footer__payment-img" src="./images/footer/visa.png" width="59.72"
-              /></a>
+              <a class="footer__payment-visa" href="#">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/footer/visa_mobile.png    1x,
+                      ./images/footer/visa_mobile@2x.png 2x,
+                      ./images/footer/visa_mobile@3x.png 3x
+                    "
+                    media="(max-width: 375px)" />
+
+                  <source
+                    srcset="
+                      /images/footer/visa_tab-desc.png    1x,
+                      /images/footer/visa_tab-desc@2x.png 2x,
+                      /images/footer/visa_tab-desc@3x.png 3x
+                    " />
+
+                  <img
+                    class="footer__payment-img"
+                    src="/images/footer/visa-mobile.png"
+                    alt="Оплата Visa" /></picture
+              ></a>
             </li>
+
             <li class="footer__payment-item">
-              <a href=""
-                ><img class="footer__payment-img" src="./images/footer/privat.png" width="45.04"
-              /></a>
+              <a class="footer__payment-privat" href="#">
+                <picture>
+                  <source
+                    srcset="
+                      /images/footer/privat_mobile.png    1x,
+                      /images/footer/privat_mobile@2x.png 2x,
+                      /images/footer/privat_mobile@3x.png 3x
+                    "
+                    media="(max-width: 375px)" />
+
+                  <source
+                    srcset="
+                      /images/footer/privat_tab-desc.png    1x,
+                      /images/footer/privat_tab-desc@2x.png 2x,
+                      /images/footer/privat_tab-desc@3x.png 3x
+                    " />
+
+                  <img class="footer__payment-img" src="/images/footer/privat.png" /></picture
+              ></a>
             </li>
+
             <li class="footer__payment-item">
-              <a href=""
-                ><img
-                  class="footer__payment-img"
-                  src="./images/footer/mastercard.png"
-                  width="61.74"
-              /></a>
+              <a class="footer__payment-mastercard" href="#">
+                <picture>
+                  <source
+                    srcset="
+                      /images/footer/mastercard_mobile.png    1x,
+                      /images/footer/mastercard_mobile@2x.png 2x,
+                      /images/footer/mastercard_mobile@3x.png 3x
+                    "
+                    media="(max-width: 375px)" />
+
+                  <source
+                    srcset="
+                      /images/footer/mastercard_tab-desc.png    1x,
+                      /images/footer/mastercard_tab-desc@2x.png 2x,
+                      /images/footer/mastercard_tab-desc@3x.png 3x
+                    " />
+
+                  <img
+                    class="footer__payment-img"
+                    src="/images/footer/mastercard_mobile.png" /></picture
+              ></a>
             </li>
-            <li class="footer__payment-item">
-              <a href=""
-                ><img class="footer__payment-img" src="./images/footer/world.png" width="61.74"
-              /></a>
+
+            <li class="footer__payment-item footer__payment-item--margin">
+              <a class="footer__payment-world" href="#">
+                <picture>
+                  <source
+                    srcset="
+                      /images/footer/world_mobile.png    1x,
+                      /images/footer/world_mobile@2x.png 2x,
+                      /images/footer/world_mobile@3x.png 3x
+                    "
+                    media="(max-width: 375px)" />
+
+                  <source
+                    srcset="
+                      /images/footer/world_tab-desc.png    1x,
+                      /images/footer/world_tab-desc@2x.png 2x,
+                      /images/footer/world_tab-desc@3x.png 3x
+                    " />
+
+                  <img class="footer__payment-img" src="/images/footer/world_mobile.png" /></picture
+              ></a>
             </li>
+
             <li class="footer__payment-item">
-              <a href=""
-                ><img class="footer__payment-img" src="./images/footer/liqpay.png" width="68.32"
-              /></a>
+              <a class="footer__payment-liqpay" href="#">
+                <picture>
+                  <source
+                    srcset="
+                      /images/footer/liqpay_mobile.png    1x,
+                      /images/footer/liqpay_mobile@2x.png 2x,
+                      /images/footer/liqpay_mobile@3x.png 3x
+                    "
+                    media="(max-width: 375px)" />
+
+                  <source
+                    srcset="
+                      /images/footer/liqpay_tab-desc.png    1x,
+                      /images/footer/liqpay_tab-desc@2x.png 2x,
+                      /images/footer/liqpay_tab-desc@3x.png 3x
+                    " />
+
+                  <img
+                    class="footer__payment-img"
+                    src="/images/footer/liqpay_mobile.png" /></picture
+              ></a>
             </li>
           </ul>
         </div>
