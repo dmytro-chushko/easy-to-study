@@ -1314,6 +1314,24 @@ img {
     background-size: 20.14vw;
   }
 }
+.tutorial--second-part {
+  background-image: url(../images/tutorial/tutorial2-owl_mobile.svg);
+  background-position: left 0 bottom 73vw;
+  background-size: 30.87vw;
+}
+@media screen and (min-width: 768px) {
+  .tutorial--second-part {
+    background-position: left 0 bottom 52vw;
+    background-size: 22.87vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial--second-part {
+    background-image: url(../images/tutorial/tutorial2-owl_desktop.svg);
+    background-position: left 0 bottom 27vw;
+    background-size: 20vw;
+  }
+}
 .tutorial__title {
   margin-bottom: 15.13vw;
   padding-left: 14.13vw;
@@ -1338,6 +1356,16 @@ img {
     padding-bottom: 1.94vw;
   }
 }
+@media screen and (min-width: 768px) {
+  .tutorial__title--second-part {
+    margin-bottom: 5.33vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__title--second-part {
+    margin-bottom: 6.79vw;
+  }
+}
 .tutorial__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1360,6 +1388,33 @@ img {
   .tutorial__list {
     margin: -1.53vw;
     margin-bottom: 12.16vw;
+  }
+}
+.tutorial__list--second-part {
+  margin-bottom: 10.67vw;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .tutorial__list--second-part {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 4.23vw;
+    margin-right: 4.23vw;
+    margin-bottom: 5.79vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tutorial__list--second-part {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__list--second-part {
+    margin-bottom: 7.5vw;
+    margin-left: -5.97vw;
+    margin-right: -5.97vw;
   }
 }
 .tutorial__item {
@@ -1409,7 +1464,7 @@ img {
 @media screen and (min-width: 768px) {
   .tutorial__item::before {
     top: -7.03vw;
-    width: 8vw;
+    width: 8.2vw;
     height: 14.06vw;
     background-size: auto 9.5vw;
   }
@@ -1417,9 +1472,21 @@ img {
 @media screen and (min-width: 1440px) {
   .tutorial__item::before {
     top: -5.35vw;
-    width: 7.3vw;
+    width: 8.3vw;
     height: 11.25vw;
   }
+}
+.tutorial__item:nth-child(1)::before {
+  background-image: url(../images/tutorial/num-one.svg);
+}
+.tutorial__item:nth-child(2)::before {
+  background-image: url(../images/tutorial/num-two.svg);
+}
+.tutorial__item:nth-child(3)::before {
+  background-image: url(../images/tutorial/num-three.svg);
+}
+.tutorial__item:nth-child(4)::before {
+  background-image: url(../images/tutorial/num-four.svg);
 }
 .tutorial__item::after {
   content: "";
@@ -1433,11 +1500,6 @@ img {
   background-size: contain;
 }
 @media screen and (min-width: 768px) {
-  .tutorial__item::after {
-    background-size: contain;
-  }
-}
-@media screen and (min-width: 768px) {
   .tutorial__item--first-part:nth-child(1) {
     margin-bottom: 7.03vw;
   }
@@ -1449,7 +1511,6 @@ img {
 }
 .tutorial__item--first-part:nth-child(1)::before {
   width: 7.73vw;
-  background-image: url(../images/tutorial/num-one.svg);
 }
 @media screen and (min-width: 768px) {
   .tutorial__item--first-part:nth-child(1)::before {
@@ -1488,9 +1549,6 @@ img {
     margin-top: 6.11vw;
   }
 }
-.tutorial__item--first-part:nth-child(2)::before {
-  background-image: url(../images/tutorial/num-two.svg);
-}
 .tutorial__item--first-part:nth-child(2)::after {
   width: 25.92vw;
   height: 18.93vw;
@@ -1518,9 +1576,6 @@ img {
     margin-bottom: 6.11vw;
   }
 }
-.tutorial__item--first-part:nth-child(3)::before {
-  background-image: url(../images/tutorial/num-three.svg);
-}
 .tutorial__item--first-part:nth-child(3)::after {
   width: 18.93vw;
   height: 21.39vw;
@@ -1536,6 +1591,140 @@ img {
   .tutorial__item--first-part:nth-child(3)::after {
     width: 14.56vw;
     height: 15.04vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tutorial__item--second-part {
+    width: calc((100% - 17.78vw)/2);
+    padding-bottom: 14.82vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__item--second-part {
+    width: calc(100%/4);
+    margin: 0;
+    padding-bottom: 10.63vw;
+  }
+}
+.tutorial__item--second-part:nth-child(1) {
+  margin-bottom: 16.6vw;
+}
+@media screen and (max-width: 1439px) {
+  .tutorial__item--second-part:nth-child(1) {
+    margin-bottom: 5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tutorial__item--second-part:nth-child(1) {
+    margin-top: -10.13vw;
+    margin-bottom: 20.13vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tutorial__item--second-part:nth-child(1) > span {
+    position: relative;
+    z-index: 1;
+  }
+}
+.tutorial__item--second-part:nth-child(1)::after {
+  width: 28.8vw;
+  height: 21.33vw;
+  background-image: url(../images/tutorial/icon-four.svg);
+}
+@media screen and (min-width: 768px) {
+  .tutorial__item--second-part:nth-child(1)::after {
+    width: 22.92vw;
+    height: 16.98vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__item--second-part:nth-child(1)::after {
+    width: 16.39vw;
+    height: 10.76vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .tutorial__item--second-part:nth-child(2) {
+    margin-bottom: 5vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__item--second-part:nth-child(2) {
+    margin-top: 16.6vw;
+  }
+}
+.tutorial__item--second-part:nth-child(2)::after {
+  width: 29.33vw;
+  height: 20.84vw;
+  background-image: url(../images/tutorial/icon-five.svg);
+}
+@media screen and (min-width: 768px) {
+  .tutorial__item--second-part:nth-child(2)::after {
+    width: 21.63vw;
+    height: 15.37vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__item--second-part:nth-child(2)::after {
+    width: 16.24vw;
+    height: 11.86vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tutorial__item--second-part:nth-child(3) {
+    margin-top: -10.13vw;
+    margin-bottom: 20.13vw;
+    padding-bottom: 42.33vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .tutorial__item--second-part:nth-child(3) {
+    margin-left: 12.24vw;
+    padding-bottom: 22.68vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__item--second-part:nth-child(3) {
+    margin-bottom: 16.6vw;
+  }
+}
+.tutorial__item--second-part:nth-child(3)::after {
+  width: 23.2vw;
+  height: 20.3vw;
+  background-image: url(../images/tutorial/icon-six.svg);
+}
+@media screen and (min-width: 768px) {
+  .tutorial__item--second-part:nth-child(3)::after {
+    width: 15.36vw;
+    height: 14.01vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__item--second-part:nth-child(3)::after {
+    width: 12.52vw;
+    height: 10.95vw;
+  }
+}
+.tutorial__item--second-part:nth-child(4)::after {
+  width: 21.87vw;
+  height: 22vw;
+  background-image: url(../images/tutorial/icon-seven.svg);
+}
+@media screen and (min-width: 768px) {
+  .tutorial__item--second-part:nth-child(4)::after {
+    width: 15.63vw;
+    height: 15.72vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__item--second-part:nth-child(4)::after {
+    width: 12.57vw;
+    height: 12.64vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial__item--second-part:nth-child(4) {
+    margin-top: 16.6vw;
   }
 }
 
@@ -1786,6 +1975,7 @@ img {
 @media screen and (min-width: 1440px) {
   .repetitors__title {
     margin-bottom: 5.69vw;
+    padding-bottom: 1.18vw;
   }
 }
 .repetitors__button {

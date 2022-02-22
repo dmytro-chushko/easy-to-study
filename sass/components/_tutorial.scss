@@ -25,6 +25,23 @@
     background-size: 20.14vw;
   }
 
+  &--second-part {
+    background-image: url(../images/tutorial/tutorial2-owl_mobile.svg);
+    background-position: left 0 bottom 73vw;
+    background-size: 30.87vw;
+
+    @media screen and (min-width: 768px) {
+      background-position: left 0 bottom 52vw;
+      background-size: 22.87vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/tutorial/tutorial2-owl_desktop.svg);
+      background-position: left 0 bottom 27vw;
+      background-size: 20vw;
+    }
+  }
+
   &__title {
     margin-bottom: 15.13vw;
     padding-left: 14.13vw;
@@ -47,6 +64,16 @@
       padding-right: 5.07vw;
       padding-bottom: 1.94vw;
     }
+
+    &--second-part {
+      @media screen and (min-width: 768px) {
+        margin-bottom: 5.33vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 6.79vw;
+      }
+    }
   }
 
   &__list {
@@ -65,6 +92,27 @@
     @media screen and (min-width: 1440px) {
       margin: -1.53vw;
       margin-bottom: 12.16vw;
+    }
+    
+    &--second-part {
+      margin-bottom: 10.67vw;
+
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        justify-content: start;
+        margin-left: 4.23vw;
+        margin-right: 4.23vw;
+        margin-bottom: 5.79vw;
+      }
+
+      @media screen and (min-width: 768px) {
+        justify-content: start;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 7.5vw;
+        margin-left: -5.97vw;
+        margin-right: -5.97vw;
+      }
     }
   }
 
@@ -113,7 +161,7 @@
       @media screen and (min-width: 768px) {
         top: -7.03vw;
 
-        width: 8vw;
+        width: 8.2vw;
         height: 14.06vw;
         background-size: auto 9.5vw;
       }
@@ -121,8 +169,32 @@
       @media screen and (min-width: 1440px) {
         top: -5.35vw;
 
-        width: 7.3vw;
+        width: 8.3vw;
         height: 11.25vw;
+      }
+    }
+
+    &:nth-child(1) {
+      &::before {
+        background-image: url(../images/tutorial/num-one.svg);
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url(../images/tutorial/num-two.svg);
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        background-image: url(../images/tutorial/num-three.svg);
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        background-image: url(../images/tutorial/num-four.svg);
       }
     }
 
@@ -137,9 +209,9 @@
       background-repeat: no-repeat;
       background-size: contain;
 
-      @media screen and (min-width: 768px) {
-        background-size: contain;
-      }
+      // @media screen and (min-width: 768px) {
+      //   background-size: contain;
+      // }
     }
 
     &--first-part {
@@ -157,8 +229,6 @@
         &::before {
           width: 7.73vw;
 
-          background-image: url(../images/tutorial/num-one.svg);
-          
           @media screen and (min-width: 768px) {
             width: 4.95vw;
           }
@@ -195,10 +265,6 @@
           margin-top: 6.11vw;
         }
 
-        &::before {
-          background-image: url(../images/tutorial/num-two.svg);
-        }
-
         &::after {
           width: 25.92vw;
           height: 18.93vw;
@@ -226,10 +292,6 @@
           margin-bottom: 6.11vw;
         }
 
-        &::before {
-          background-image: url(../images/tutorial/num-three.svg);
-        }
-
         &::after {
           width: 18.93vw;
           height: 21.39vw;
@@ -246,7 +308,135 @@
           }
         }
       }
-    }  
+    }
+    
+    &--second-part {
+      
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 17.78vw)/2);
+        padding-bottom: 14.82vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: calc(100%/4);
+        margin: 0;
+        padding-bottom: 10.63vw;
+      }
+      
+      &:nth-child(1) {
+        margin-bottom: 16.6vw;
+        
+        @media screen and (max-width: 1439px) {
+          margin-bottom: 5vw;
+        }
+        
+        @media screen and (max-width: 767px) {
+          margin-top: -10.13vw;
+          margin-bottom: 20.13vw;
+        }
+
+        &>span {
+          @media screen and (min-width: 768px) {
+            position: relative;
+            z-index: 1;
+          }
+        }
+        
+        &::after {
+          width: 28.8vw;
+          height: 21.33vw;
+          background-image: url(../images/tutorial/icon-four.svg);
+
+          @media screen and (min-width: 768px) {
+            width: 22.92vw;
+            height: 16.98vw;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 16.39vw;
+            height: 10.76vw;
+          }
+        }
+      }
+      &:nth-child(2) {
+        @media screen and (min-width: 768px) and (max-width: 1439px) {
+          margin-bottom: 5vw;
+        }
+
+        @media screen and (min-width: 1440px) {
+          margin-top: 16.6vw;
+        }
+
+        &::after {
+          width: 29.33vw;
+          height: 20.84vw;
+          background-image: url(../images/tutorial/icon-five.svg);
+
+          @media screen and (min-width: 768px) {
+            width: 21.63vw;
+            height: 15.37vw;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 16.24vw;
+            height: 11.86vw;
+          }
+        }
+      }
+      &:nth-child(3) {
+        @media screen and (max-width: 767px) {
+          margin-top: -10.13vw;
+          margin-bottom: 20.13vw;
+          padding-bottom: 42.33vw;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1439px) {
+          margin-left: 12.24vw;
+          padding-bottom: 22.68vw;
+        }
+
+        @media screen and (min-width: 1440px) {
+          margin-bottom: 16.6vw;
+        }
+        
+        &::after {
+          width: 23.2vw;
+          height: 20.3vw;
+          background-image: url(../images/tutorial/icon-six.svg);
+
+          @media screen and (min-width: 768px) {
+            width: 15.36vw;
+            height: 14.01vw;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 12.52vw;
+            height: 10.95vw;
+          }
+        }
+      }
+      &:nth-child(4) {
+        &::after {
+          width: 21.87vw;
+          height: 22vw;
+          background-image: url(../images/tutorial/icon-seven.svg);
+
+          @media screen and (min-width: 768px) {
+            width: 15.63vw;
+            height: 15.72vw;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 12.57vw;
+            height: 12.64vw;
+          }
+        }
+
+        @media screen and (min-width: 1440px) {
+          margin-top: 16.6vw;
+        }
+      }
+    }
   }
 }
 
