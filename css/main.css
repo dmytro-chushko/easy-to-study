@@ -21,10 +21,6 @@ a {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 h1,
 h2,
 p,
@@ -137,7 +133,7 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .section__description {
-    width: 47.15vw;
+    width: 46.15vw;
     margin-left: 0;
     margin-bottom: 2.22vw;
     font-size: 1.9vw;
@@ -1753,6 +1749,27 @@ img {
   padding-right: 12.27vw;
   padding-bottom: 117.6vw;
   background-color: #0A0070;
+  background-image: url(../images/repetitors/repetitors-owl.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 61.06vw;
+}
+@media screen and (min-width: 768px) {
+  .repetitors {
+    padding-left: 17.51vw;
+    padding-right: 17.51vw;
+    padding-bottom: 67.58vw;
+    background-size: 57.29vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .repetitors {
+    padding-left: 16.88vw;
+    padding-right: 16.88vw;
+    padding-bottom: 24.51vw;
+    background-position: 18.54vw bottom;
+    background-size: 27.5vw;
+  }
 }
 .repetitors__title {
   margin-bottom: 15.47vw;
@@ -1760,29 +1777,137 @@ img {
   background-color: #B8E2ED;
   color: #0A0070;
 }
+@media screen and (min-width: 768px) {
+  .repetitors__title {
+    margin-bottom: 10.68vw;
+    padding-bottom: 5.21vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .repetitors__title {
+    margin-bottom: 5.69vw;
+  }
+}
 .repetitors__button {
-  width: 67.73vw;
-  margin-left: auto;
-  margin-right: auto;
+  width: 37.89vw;
+}
+@media screen and (max-width: 767px) {
+  .repetitors__button {
+    width: 67.73vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .repetitors__button {
+    width: 22.22vw;
+    margin-left: 16.94vw;
+  }
 }
 .repetitors__list {
   position: absolute;
   right: 0;
   bottom: 10.13vw;
 }
+@media screen and (min-width: 768px) {
+  .repetitors__list {
+    right: 0.39vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .repetitors__list {
+    right: 7.47vw;
+    bottom: 12.04vw;
+  }
+}
 .repetitors__item {
   width: 74.67vw;
-  padding-top: 5.6vw;
-  padding-bottom: 5.6vw;
-  border-radius: 10.67vw 0 0 10.67vw;
-  background-color: rgba(95, 40, 120, 0.31);
-  background-image: url(../images/repetitors/frame.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .repetitors__item {
+    width: 40.89vw;
+  }
+  .repetitors__item:not(:last-child) {
+    margin-bottom: 0.39vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .repetitors__item {
+    width: 24.51vw;
+  }
+  .repetitors__item:not(:last-child) {
+    margin-bottom: 0.2vw;
+  }
+}
+.repetitors__link {
+  position: relative;
+  width: 100%;
+  height: 100%;
   font-weight: 600;
-  font-size: 4.27vw;
+  font-size: 2.34vw;
   color: #FC7387;
+}
+.repetitors__link:hover > span {
+  background-color: #5F2878;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .repetitors__link:hover {
+    background-color: #5F2878;
+    color: #FFFFFF;
+  }
+}
+@media screen and (max-width: 767px) {
+  .repetitors__link {
+    padding-top: 5.6vw;
+    padding-bottom: 5.6vw;
+    border-radius: 10.67vw 0 0 10.67vw;
+    background-color: rgba(95, 40, 120, 0.31);
+    background-image: url(../images/repetitors/frame.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 4.27vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .repetitors__link > span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding-top: 3.13vw;
+    padding-bottom: 3.13vw;
+    background-color: #0A0070;
+    border-radius: 10.67vw 0 0 10.67vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .repetitors__link > span {
+    padding-top: 1.9vw;
+    padding-bottom: 1.9vw;
+    font-size: 1.39vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .repetitors__link::after {
+    content: "";
+    position: absolute;
+    top: -0.39vw;
+    left: -0.39vw;
+    right: -0.39vw;
+    bottom: -0.39vw;
+    border-radius: 10.67vw 0 0 10.67vw;
+    background-image: -webkit-gradient(linear, left top, right top, from(#FC7387), to(#8900FA));
+    background-image: linear-gradient(to right, #FC7387, #8900FA);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .repetitors__link::after {
+    top: -0.2vw;
+    left: -0.2vw;
+    right: -0.2vw;
+    bottom: -0.2vw;
+  }
 }
 
 .footer {

@@ -3,9 +3,7 @@
 $primary-bgc: #0A0070;
 $secondary-bgc: #B8E2ED;
 $accent-bgc: #FFE06B;
-$item-bgc: #FFFFFF;
 $lable-bgc: #FC7387;
-$list-item-bgc: rgba(95, 40, 120, 0.31);
 
 // ----------- Text colors ----------- //
 
@@ -13,7 +11,7 @@ $primary-text: #000000;
 $secondary-text: #0A0070;
 $accent-color: #FFFFFF;
 $dec-color: #FDE589;
-$list-text: #FC7387;
+
 
 // ----------- Title colors ----------- //
 
@@ -21,10 +19,17 @@ $head-title: #FFE06B;
 $primary-title: #0A0070;
 $secondary-title: #B8E2ED;
 
-// ----------- Button colors ----------- //
+// ----------- Button's colors ----------- //
 
 $primary-button: #FC7387;
 $slider-button: rgba(0, 87, 159, 0.12);
+
+// ----------- Item's colors ----------- //
+
+$repetitors-list-text: #FC7387;
+$tutorial-item-bgc: #FFFFFF;
+$repetitors-item-bgc: rgba(95, 40, 120, 0.31);
+$hover-repetitors-item-bgc: #5F2878;
 
 // ----------- Decorative elements colors ----------- //
 
