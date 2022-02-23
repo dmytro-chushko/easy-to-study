@@ -1,0 +1,323 @@
+.proposal {
+  padding-left: 7.2vw;
+  padding-right: 7.2vw;
+  padding-bottom: 17.33vw;
+  background-color: $primary-bgc;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 9.64vw;
+    padding-right: 9.64vw;
+    padding-bottom: 16.54vw;   
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    background-image: url(../images/proposal/proposal-owl_tablet.svg);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom -25vw;
+    background-size: 41vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 13.19vw;
+    padding-right: 13.19vw;
+  }
+
+  &__title {
+    margin-bottom: 42.93vw;
+    padding-left: 11.33vw;
+    padding-right: 11.33vw;
+    padding-bottom: 1.73vw;
+    background-color: $secondary-bgc;
+
+    color: $primary-title;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 22.4vw;
+      padding-left: 8.92vw;
+      padding-right: 8.92vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 17.57vw;
+      padding-left: 4.38vw;
+      padding-right: 4.38vw;
+    }
+  }
+
+  &__sub-title {
+    margin-bottom: 2.13vw;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 5.33vw;
+    color: $primary-title;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.6vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 0.56vw;
+
+      font-size: 1.67vw;
+    }
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: -0.6vw;
+    }
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+
+    padding-left: 3.73vw;
+    padding-right: 3.73vw;
+    padding-top: 5.6vw;
+    padding-bottom: 5.6vw;
+    border-radius: 8vw;
+    background-color: $primary-item-bgc;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% / 2));
+      padding-left: 1.82vw;
+      padding-right: 1.82vw;
+      padding-bottom: 2.73vw;
+      padding-top: 3.26vw;
+      border-radius: 3.9vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: calc((100% - 3.6vw)/ 3);
+      margin: 0.6vw;
+      padding-left: 1.35vw;
+      padding-right: 1.35vw;
+      padding-bottom: 1.18vw;
+      padding-top: 1.74vw;
+      border-radius: 2.08vw;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } 
+
+    &:nth-child(1) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 32.2vw;
+      }
+
+      @media screen and (max-width: 1439px) {
+        margin-bottom: 26.57vw;
+      }
+
+      &::before {
+        top: -32.47vw;
+        
+        width: 43.47vw;
+        height: 32.27vw;
+        background-image: url(../images/proposal/first-icon.svg);
+
+        @media screen and (min-width: 768px) {
+          top: -19.79vw;
+
+          width: 26.69vw;
+          height: 19.79vw;
+        }
+
+        @media screen and (min-width: 1440px) {
+          top: -11.65vw;
+
+          width: 15.69vw;
+          height: 11.74vw;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 35.3vw;
+      }
+
+      @media screen and (max-width: 1439px) {
+        margin-top: 26.57vw;
+      }
+
+      &::before {
+        top: -26.93vw;
+        
+        width: 41.87vw;
+        height: 26.93vw;
+        background-image: url(../images/proposal/second-icon_desktop.svg);
+
+        @media screen and (min-width: 768px) {
+          top: -17.5vw;
+
+          width: 27.35vw;
+          height: 18.75vw;
+          background-size: contain;
+        }
+
+        @media screen and (min-width: 1440px) {
+          top: -11.45vw;
+
+          width: 15.69vw;
+          height: 11.53vw;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (max-width: 1439px) {
+        margin-top: -0.57vw;
+      }
+
+      &::before {
+        top: -29.33vw;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 42.93vw;
+        height: 29.33vw;
+        background-image: url(../images/proposal/third-icon_desktop.svg);
+
+        @media screen and (min-width: 768px) {
+          top: -17.6vw;
+
+          width: 25.78vw;
+          height: 18.23vw;
+          background-size: contain;
+        }
+
+        @media screen and (min-width: 1440px) {
+          top: -11.4vw;
+
+          width: 15.69vw;
+          height: 11.53vw;
+        }
+      }
+    }
+  }
+
+  &__descr {
+    text-align: center;
+    color: $secondary-text;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.82vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1.11vw;
+    }
+  }
+
+  &__circle {
+    &--blue {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      @include circle (96.86vw, 73.09vw, 8.72vw, 8.72vw);
+      background-color: $circle-blue;
+
+      @media screen and (min-width: 1440px) {
+        @include circle (48.40vw, 65.14vw, 3.96vw, 3.96vw);
+      }
+    }
+
+    &--yellow {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      @include circle (38.67vw, 56.51vw, 5.34vw, 5.34vw);
+      background-color: $circle-yellow;
+
+      @media screen and (min-width: 1440px) {
+        @include circle (43.26vw, 28.68vw, 6.74vw, 6.74vw);
+        background-color: $circle-violet;
+      }
+
+      &+.proposal__circle--yellow {
+        @include circle (125.49vw, 40.36vw, 7.42vw, 7.42vw);
+
+        @media screen and (min-width: 1440px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__square {
+    &--violet {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      @include square (13.94vw, 86.29vw, 8.33vw, 8.33vw);
+      background-color: $square-violet;
+      transform: rotate(-28.04deg);
+
+      @media screen and (min-width: 1440px) {
+        @include square (51.67vw, 48.18vw, 3.71vw, 3.71vw);
+        background-color: $square-yellow;
+        transform: rotate(27.11deg);
+      }
+
+      &+.proposal__square--violet {
+        @include square (101.19vw, -0.7vw, 7.99vw, 7.99vw);
+        transform: rotate(17.94deg);
+
+        @media screen and (min-width: 1440px) {
+          display: none;
+        }
+      }
+    }
+
+    &--pink {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      @include square (61.51vw, 90.36vw, 4.76vw, 4.76vw);
+      background-color: $square-pink;
+      transform: rotate(6.29deg);
+
+      @media screen and (min-width: 1440px) {
+        @include square (50vw, 4.1vw, 6.65vw, 6.65vw);
+        transform: rotate(-27.02deg);
+      }
+    }
+  }
+
+  &__pic {
+    @media screen  and (max-width: 1439px) {
+      display: none;
+    }
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    width: 29.08vw;
+    height: 35.75vw;
+    background-image: url(../images/proposal/proposal-owl_desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 30vw;
+    background-position: right bottom -12vw;
+  }
+}
