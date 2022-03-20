@@ -119,7 +119,7 @@
         margin-bottom: 32.2vw;
       }
 
-      @media screen and (max-width: 1439px) {
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
         margin-bottom: 26.57vw;
       }
 
@@ -138,9 +138,9 @@
         }
 
         @media screen and (min-width: 1440px) {
-          top: -11.65vw;
+          top: -11.72vw;
 
-          width: 15.69vw;
+          width: 16.69vw;
           height: 11.74vw;
         }
       }
@@ -151,7 +151,7 @@
         margin-bottom: 35.3vw;
       }
 
-      @media screen and (max-width: 1439px) {
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
         margin-top: 26.57vw;
       }
 
@@ -163,24 +163,23 @@
         background-image: url(../images/proposal/second-icon_desktop.svg);
 
         @media screen and (min-width: 768px) {
-          top: -17.5vw;
+          top: -18.7vw;
 
           width: 27.35vw;
           height: 18.75vw;
-          background-size: contain;
         }
 
         @media screen and (min-width: 1440px) {
-          top: -11.45vw;
+          top: -11.51vw;
 
-          width: 15.69vw;
+          width: 16.69vw;
           height: 11.53vw;
         }
       }
     }
 
     &:nth-child(3) {
-      @media screen and (max-width: 1439px) {
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
         margin-top: -0.57vw;
       }
 
@@ -194,17 +193,16 @@
         background-image: url(../images/proposal/third-icon_desktop.svg);
 
         @media screen and (min-width: 768px) {
-          top: -17.6vw;
+          top: -18.3vw;
 
           width: 25.78vw;
           height: 18.23vw;
-          background-size: contain;
         }
 
         @media screen and (min-width: 1440px) {
-          top: -11.4vw;
+          top: -11.51vw;
 
-          width: 15.69vw;
+          width: 16.69vw;
           height: 11.53vw;
         }
       }
@@ -224,12 +222,14 @@
     }
   }
 
-  &__circle {
-    &--blue {
-      @media screen and (max-width: 767px) {
-        display: none;
-      }
+  // ----------- Decorative elements ----------- //
 
+  &__circle {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    &--blue {
       @include circle (96.86vw, 73.09vw, 8.72vw, 8.72vw);
       background-color: $circle-blue;
 
@@ -239,10 +239,6 @@
     }
 
     &--yellow {
-      @media screen and (max-width: 767px) {
-        display: none;
-      }
-
       @include circle (38.67vw, 56.51vw, 5.34vw, 5.34vw);
       background-color: $circle-yellow;
 
@@ -262,11 +258,11 @@
   }
 
   &__square {
-    &--violet {
-      @media screen and (max-width: 767px) {
-        display: none;
-      }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 
+    &--violet {
       @include square (13.94vw, 86.29vw, 8.33vw, 8.33vw);
       background-color: $square-violet;
       transform: rotate(-28.04deg);
@@ -288,10 +284,6 @@
     }
 
     &--pink {
-      @media screen and (max-width: 767px) {
-        display: none;
-      }
-
       @include square (61.51vw, 90.36vw, 4.76vw, 4.76vw);
       background-color: $square-pink;
       transform: rotate(6.29deg);
