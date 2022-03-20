@@ -55,12 +55,12 @@ img {
   padding-top: 4vw;
   padding-bottom: 4vw;
   border-radius: 10.67vw;
-  background-color: #FC7387;
+  background-color: #fc7387;
   -webkit-box-shadow: 0 0 5.33vw 1.33vw rgba(252, 115, 135, 0.5);
           box-shadow: 0 0 5.33vw 1.33vw rgba(252, 115, 135, 0.5);
   font-weight: 600;
   font-size: 4.27vw;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .button--pink {
@@ -118,7 +118,7 @@ img {
   margin-bottom: 4vw;
   font-weight: 600;
   font-size: 4.26vw;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (max-width: 767px) {
   .section__description {
@@ -153,8 +153,8 @@ img {
   width: 61vw;
   height: 2.67vw;
   border-radius: 0 1.33vw 1.33vw 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#8900FA), to(#FC7387));
-  background-image: linear-gradient(to right, #8900FA, #FC7387);
+  background-image: -webkit-gradient(linear, left top, right top, from(#8900fa), to(#fc7387));
+  background-image: linear-gradient(to right, #8900fa, #fc7387);
 }
 @media screen and (min-width: 768px) {
   .decorative-line {
@@ -231,7 +231,7 @@ img {
   padding-bottom: 2.08vw;
   padding-left: 2.6vw;
   padding-right: 2.6vw;
-  background: #FC7387;
+  background: #fc7387;
   border-radius: 5.2vw;
   -webkit-box-shadow: 0 0 5.33vw 1.33vw rgba(252, 115, 135, 0.5);
           box-shadow: 0 0 5.33vw 1.33vw rgba(252, 115, 135, 0.5);
@@ -374,7 +374,7 @@ img {
 
 .hero {
   padding-top: 21.33vw;
-  background-color: #0A0070;
+  background-color: #0a0070;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -405,7 +405,7 @@ img {
   font-weight: 700;
   font-size: 9.6vw;
   line-height: 1.12;
-  color: #FFE06B;
+  color: #ffe06b;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
@@ -447,7 +447,7 @@ img {
   font-weight: 500;
   font-size: 4.8vw;
   line-height: 1.22;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .hero__description {
@@ -495,7 +495,7 @@ img {
   width: 15.46vw;
   height: 15.46vw;
   border-radius: 50%;
-  background-color: #8900FA;
+  background-color: #8900fa;
 }
 @media screen and (min-width: 768px) {
   .hero__circle--violet {
@@ -524,7 +524,7 @@ img {
   width: 11.46vw;
   height: 11.46vw;
   border-radius: 50%;
-  background-color: #FC7387;
+  background-color: #fc7387;
 }
 @media screen and (min-width: 768px) {
   .hero__circle--pink {
@@ -553,7 +553,7 @@ img {
   width: 14.13vw;
   height: 14.13vw;
   border-radius: 50%;
-  background-color: #30D4FE;
+  background-color: #30d4fe;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
@@ -583,7 +583,7 @@ img {
   width: 7.46vw;
   height: 7.46vw;
   border-radius: 50%;
-  background-color: #FDE589;
+  background-color: #fde589;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
@@ -608,8 +608,8 @@ img {
   width: 107.46vw;
   height: 107.46vw;
   border-radius: 50%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8900FA), to(#FC7387));
-  background-image: linear-gradient(180deg, #8900FA 0%, #FC7387 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8900fa), to(#fc7387));
+  background-image: linear-gradient(180deg, #8900fa 0%, #fc7387 100%);
 }
 @media screen and (min-width: 768px) {
   .hero__circle--main {
@@ -637,7 +637,7 @@ img {
   left: 1.33vw;
   width: 7.73vw;
   height: 7.73vw;
-  background-color: #FDE589;
+  background-color: #fde589;
 }
 @media screen and (max-width: 767px) {
   .hero__square--yellow-turquoise {
@@ -652,7 +652,7 @@ img {
     left: 86.19vw;
     width: 7.68vw;
     height: 7.68vw;
-    background-color: #30D4FE;
+    background-color: #30d4fe;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -670,7 +670,7 @@ img {
   left: 91.5vw;
   width: 9.06vw;
   height: 9.06vw;
-  background-color: #273CFD;
+  background-color: #273cfd;
 }
 @media screen and (max-width: 767px) {
   .hero__square--blue {
@@ -702,7 +702,7 @@ img {
   left: 44.53vw;
   width: 4.64vw;
   height: 4.64vw;
-  background-color: #FC7387;
+  background-color: #fc7387;
 }
 @media screen and (max-width: 767px) {
   .hero__square--pink {
@@ -727,7 +727,7 @@ img {
 
 .advantages {
   padding-bottom: 76px;
-  background-color: #FFE06B;
+  background-color: #ffe06b;
 }
 @media screen and (min-width: 768px) {
   .advantages {
@@ -746,8 +746,8 @@ img {
 .advantages__title {
   margin-bottom: 14.13vw;
   padding-bottom: 2vw;
-  background-color: #0A0070;
-  color: #FFE06B;
+  background-color: #0a0070;
+  color: #ffe06b;
 }
 @media screen and (min-width: 768px) {
   .advantages__title {
@@ -786,7 +786,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   font-size: 4.8vw;
-  color: #0A0070;
+  color: #0a0070;
 }
 @media screen and (max-width: 1439px) {
   .advantages__item {
@@ -920,7 +920,7 @@ img {
   width: 15.73vw;
   height: 15.73vw;
   border-radius: 50%;
-  background-color: #8900FA;
+  background-color: #8900fa;
 }
 @media screen and (min-width: 768px) {
   .advantages__circle--violet {
@@ -934,7 +934,7 @@ img {
   width: 9.6vw;
   height: 9.6vw;
   border-radius: 50%;
-  background-color: #FC7387;
+  background-color: #fc7387;
 }
 @media screen and (min-width: 768px) {
   .advantages__circle--pink {
@@ -958,7 +958,7 @@ img {
   width: 16.26vw;
   height: 16.26vw;
   border-radius: 50%;
-  background-color: #30D4FE;
+  background-color: #30d4fe;
 }
 @media screen and (min-width: 768px) {
   .advantages__circle--turquoise {
@@ -987,7 +987,7 @@ img {
   width: 6.77vw;
   height: 6.77vw;
   border-radius: 50%;
-  background-color: #0A0070;
+  background-color: #0a0070;
 }
 .advantages__circle--dark-blue + .advantages__circle--dark-blue {
   top: 118.49vw;
@@ -1019,7 +1019,7 @@ img {
   left: 90.46vw;
   width: 12.89vw;
   height: 12.89vw;
-  background-color: #273CFD;
+  background-color: #273cfd;
   -webkit-transform: rotate(19.82deg);
           transform: rotate(19.82deg);
 }
@@ -1050,7 +1050,7 @@ img {
     left: 91.45vw;
     width: 11.06vw;
     height: 10.54vw;
-    background-color: #FC7387;
+    background-color: #fc7387;
     -webkit-transform: rotate(-17.68deg);
             transform: rotate(-17.68deg);
   }
@@ -1062,7 +1062,7 @@ img {
     left: 35.02vw;
     width: 8.09vw;
     height: 8.09vw;
-    background-color: #8900FA;
+    background-color: #8900fa;
     -webkit-transform: rotate(-42.2deg);
             transform: rotate(-42.2deg);
   }
@@ -1081,7 +1081,7 @@ img {
   padding-bottom: 38.93vw;
   padding-left: 5.86vw;
   padding-right: 5.86vw;
-  background-color: #0A0070;
+  background-color: #0a0070;
   background-image: url(../images/materials/owl-materials.svg);
   background-size: 63.46vw 36.43vw;
   background-position: center bottom;
@@ -1108,8 +1108,8 @@ img {
 .materials__title {
   margin-bottom: 15.13vw;
   padding-bottom: 2.35vw;
-  background-color: #FFE06B;
-  color: #0A0070;
+  background-color: #ffe06b;
+  color: #0a0070;
 }
 @media screen and (min-width: 768px) {
   .materials__title {
@@ -1228,7 +1228,7 @@ img {
   font-weight: 700;
   font-size: 2.34vw;
   text-transform: uppercase;
-  color: #FDE589;
+  color: #fde589;
 }
 .materials__dec-item:not(:last-child) {
   margin-bottom: 3.77vw;
@@ -1247,7 +1247,7 @@ img {
   width: 5.2vw;
   height: 5.2vw;
   border-radius: 50%;
-  background-color: #FC7387;
+  background-color: #fc7387;
 }
 @media screen and (min-width: 1440px) {
   .materials__dec-item::before {
@@ -1289,7 +1289,7 @@ img {
   padding-left: 3.46vw;
   padding-right: 3.46vw;
   padding-bottom: 12.8vw;
-  background-color: #B8E2ED;
+  background-color: #b8e2ed;
   background-image: url(../images/tutorial/tutorial-owl_mobile.svg);
   background-repeat: no-repeat;
   background-position: top 111.5vw right 0;
@@ -1337,8 +1337,8 @@ img {
   padding-left: 14.13vw;
   padding-right: 14.13vw;
   padding-bottom: 1.47vw;
-  background-color: #0A0070;
-  color: #B8E2ED;
+  background-color: #0a0070;
+  color: #b8e2ed;
 }
 @media screen and (min-width: 768px) {
   .tutorial__title {
@@ -1426,7 +1426,7 @@ img {
   padding-top: 8vw;
   padding-bottom: 21.33vw;
   border-radius: 5.33vw;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .tutorial__item {
@@ -1737,7 +1737,7 @@ img {
   text-align: center;
   font-weight: 600;
   font-size: 4.8vw;
-  color: #0A0070;
+  color: #0a0070;
 }
 @media screen and (min-width: 768px) {
   .slider__lable {
@@ -1826,8 +1826,8 @@ img {
   padding-left: 5vw;
   padding-right: 5vw;
   border-radius: 8vw 0 8vw 0;
-  background-color: #FC7387;
-  color: #0A0070;
+  background-color: #fc7387;
+  color: #0a0070;
 }
 @media screen and (min-width: 768px) {
   .slider__img-lable {
@@ -1845,7 +1845,7 @@ img {
 .slider__descr {
   text-align: center;
   font-weight: 600;
-  color: #0A0070;
+  color: #0a0070;
 }
 @media screen and (min-width: 768px) {
   .slider__descr {
@@ -1937,7 +1937,7 @@ img {
   padding-left: 12.27vw;
   padding-right: 12.27vw;
   padding-bottom: 117.6vw;
-  background-color: #0A0070;
+  background-color: #0a0070;
   background-image: url(../images/repetitors/repetitors-owl.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -1963,8 +1963,8 @@ img {
 .repetitors__title {
   margin-bottom: 15.47vw;
   padding-bottom: 4.73vw;
-  background-color: #B8E2ED;
-  color: #0A0070;
+  background-color: #b8e2ed;
+  color: #0a0070;
 }
 @media screen and (min-width: 768px) {
   .repetitors__title {
@@ -2036,16 +2036,16 @@ img {
   height: 100%;
   font-weight: 600;
   font-size: 2.34vw;
-  color: #FC7387;
+  color: #fc7387;
 }
 .repetitors__link:hover > span {
-  background-color: #5F2878;
-  color: #FFFFFF;
+  background-color: #5f2878;
+  color: #ffffff;
 }
 @media screen and (max-width: 767px) {
   .repetitors__link:hover {
-    background-color: #5F2878;
-    color: #FFFFFF;
+    background-color: #5f2878;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2067,7 +2067,7 @@ img {
     display: block;
     padding-top: 3.13vw;
     padding-bottom: 3.13vw;
-    background-color: #0A0070;
+    background-color: #0a0070;
     border-radius: 10.67vw 0 0 10.67vw;
   }
 }
@@ -2087,8 +2087,8 @@ img {
     right: -0.39vw;
     bottom: -0.39vw;
     border-radius: 10.67vw 0 0 10.67vw;
-    background-image: -webkit-gradient(linear, left top, right top, from(#FC7387), to(#8900FA));
-    background-image: linear-gradient(to right, #FC7387, #8900FA);
+    background-image: -webkit-gradient(linear, left top, right top, from(#fc7387), to(#8900fa));
+    background-image: linear-gradient(to right, #fc7387, #8900fa);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -2100,11 +2100,90 @@ img {
   }
 }
 
+.support {
+  position: relative;
+  padding-left: 12.53vw;
+  padding-right: 10.66vw;
+  background-color: #ffe06b;
+}
+.support__title {
+  margin-bottom: 14.4vw;
+  width: 77.6vw;
+  height: 30.66vw;
+  background-color: #b8e2ed;
+  color: #0a0070;
+  font-size: 5.33vw;
+}
+.support__wrapper {
+  width: 76.8vw;
+  border-radius: 10.66vw;
+  padding: 7.73vw 6.13vw 7.73vw 10.93vw;
+  background-color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 75.2vw;
+}
+.support__text {
+  position: relative;
+  color: #0a0070;
+}
+.support__text:not(:last-child) {
+  margin-bottom: 2.66vw;
+}
+.support__text:before {
+  content: ".";
+  position: absolute;
+  top: -2.4vw;
+  left: -3.93vw;
+  font-size: 5.33vw;
+}
+.support__img-mark {
+  position: absolute;
+  width: 6.93vw;
+  height: 28.53vw;
+  top: 30.66vw;
+  left: 9.06vw;
+}
+.support__img-owl {
+  position: absolute;
+  width: 52.36vw;
+  height: 82.93vw;
+  right: 0;
+  bottom: 0;
+}
+.support__square--pink {
+  position: absolute;
+  top: 111vw;
+  left: -2vw;
+  width: 9.33vw;
+  height: 9.33vw;
+  background-color: #fc7387;
+  -webkit-transform: rotate(30.82deg);
+          transform: rotate(30.82deg);
+}
+.support__square--violet {
+  position: absolute;
+  top: 206.4vw;
+  left: 22.13vw;
+  width: 12.07vw;
+  height: 12.07vw;
+  background-color: #8900fa;
+  -webkit-transform: rotate(30.82deg);
+          transform: rotate(30.82deg);
+}
+.support__circle--blue {
+  position: absolute;
+  top: 165.33vw;
+  left: 14.66vw;
+  width: 13.8vw;
+  height: 12.8vw;
+  border-radius: 50%;
+  background-color: #273cfd;
+}
+
 .footer {
   padding-top: 18.13vw;
   padding-bottom: 4vw;
-  background-color: #0A0070;
-  color: #FFFFFF;
+  background-color: #0a0070;
+  color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -2386,8 +2465,8 @@ img {
   margin-left: auto;
   padding: 2.66vw 6.4vw;
   border-radius: 8vw;
-  background-color: #B8E2ED;
-  color: #0A0070;
+  background-color: #b8e2ed;
+  color: #0a0070;
   font-size: 4.8vw;
   font-weight: 500;
 }
