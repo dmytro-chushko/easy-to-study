@@ -1,8 +1,72 @@
 .support {
-  padding-left: 9.06vw;
+  position: relative;
+  padding-left: 12.53vw;
   padding-right: 10.66vw;
+  background-color: $accent-bgc;
 
   &__title {
-    color: chartreuse;
+    margin-bottom: 14.4vw;
+    width: 77.6vw;
+    height: 30.66vw;
+    background-color: $secondary-bgc;
+    color: $secondary-text;
+    font-size: 5.33vw;
+  }
+
+  &__wrapper {
+    width: 76.8vw;
+    border-radius: 10.66vw;
+    padding: 7.73vw 6.13vw 7.73vw 10.93vw;
+    background-color: $support-list-bgc;
+    margin-bottom: 75.2vw;
+  }
+
+  &__text {
+    position: relative;
+    color: $primary-title;
+    &:not(:last-child) {
+      margin-bottom: 2.66vw;
+    }
+
+    &:before {
+      content: '.';
+      position: absolute;
+      top: -2.4vw;
+      left: -3.93vw;
+      font-size: 5.33vw;
+    }
+  }
+
+  &__img-mark {
+    position: absolute;
+    width: 6.93vw;
+    height: 28.53vw;
+    top: 30.66vw;
+    left: 9.06vw;
+  }
+
+  &__img-owl {
+    position: absolute;
+    width: 52.36vw;
+    height: 82.93vw;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__square--pink {
+    @include square(111vw, -2vw, 9.33vw, 9.33vw);
+    background-color: $square-pink;
+    transform: rotate(30.82deg);
+  }
+
+  &__square--violet {
+    @include square(206.4vw, 22.13vw, 12.07vw, 12.07vw);
+    background-color: $square-violet;
+    transform: rotate(30.82deg);
+  }
+
+  &__circle--blue {
+    @include circle(165.33vw, 14.66vw, 13.8vw, 12.8vw);
+    background-color: $square-blue;
   }
 }
