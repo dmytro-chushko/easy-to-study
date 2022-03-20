@@ -1,0 +1,232 @@
+.faq {
+  padding-left: 1.6vw;
+  padding-right: 1.6vw;
+  padding-bottom: 52.8vw;
+  background-color: $secondary-bgc;
+  background-image: url(../images/faq/faq-owl.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 55.65vw;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 13.93vw;
+    padding-right: 13.93vw;
+    padding-bottom: 26.43vw;
+    background-position: left 10.49vw bottom;
+    background-size: 31.04vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 8.26vw;
+    padding-right: 8.26vw;
+    padding-bottom: 18.61vw;
+    background-image: url(../images/faq/faq-desktop-owl.svg);
+    background-position: left 10.49vw bottom 0;
+    background-size: 23.31vw;
+  }
+
+  &__title {
+    margin-bottom: 9.6vw;
+    padding-top: 9.73vw;
+    padding-bottom: 9.73vw;
+    padding-left: 14.26vw;
+    padding-right: 14.26vw;
+    background-color: $primary-bgc;
+
+    color: $secondary-title;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 5.08vw;
+      padding-top: 6.25vw;
+      padding-bottom: 6.25vw;
+      padding-left: 10.09vw;
+      padding-right: 10.09vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding-top: 3.33vw;
+      padding-bottom: 3.38vw;
+      padding-left: 5.38vw;
+      padding-right: 5.38vw;
+      margin-bottom: 4.3vw;
+    }
+  }
+
+  &__list {
+    @media screen and (min-width: 1440px) {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin: -0.59vw -4.17vw;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    padding-top: 7.73vw;
+    padding-bottom: 7.73vw;
+    padding-left: 6.13vw;
+    border-radius: 13.33vw;
+    background-color: $faq-item-bgc;
+
+    font-weight: 700;
+    color: $accent-color;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 4.346vw;
+      padding-bottom: 4.36vw;
+      padding-left: 4.17vw;
+      border-radius: 6.51vw;
+
+      font-size: 2.6vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      order: 1;
+
+      width: calc((100% - 16.7vw)/2);
+
+      margin: 0.59vw 4.17vw;
+      padding-top: 2.33vw;
+      padding-bottom: 2.33vw;
+      padding-left: 2.22vw;
+      border-radius: 3.47vw;
+
+      font-size: 1.39vw;
+
+      &:nth-child(2) {
+        order: 3;
+      }
+
+      &:nth-child(3) {
+        order: 2;
+      }
+
+      &:nth-child(4) {
+        order: 4;
+      }
+      
+      &:nth-last-child(-n + 2) {
+        order: 4;
+
+        margin-left: calc(((100% - 16.7vw)/2) + 12.6vw);
+      }
+    }
+    
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 6.4vw;
+      }
+      
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        margin-bottom: 2.21vw;
+      }
+    }
+    
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 3.73vw;
+
+      display: block;
+      width: 6.5vw;
+      height: 6.5vw;
+      background-image: url(../images/faq/cross.svg);
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        right: 2.82vw;
+
+        width: 4.56vw;
+        height: 4.56vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        right: 1.5vw;
+        
+        width: 2.43vw;
+        height: 2.43vw;
+      }
+    }
+  }
+
+  // ----------- Decorative elements ----------- //
+
+  &__circle {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    &--yellow {
+      @include circle (48.44vw, -4.43vw, 11.46vw, 11.46vw);
+      background-color: $circle-yellow;
+
+      @media screen and (min-width: 1440px) {
+        @include circle (35.14vw, 39.51vw, 2.71vw, 2.71vw);
+        background-color: $circle-blue;
+      }
+    }
+
+    &--blue {
+      @include circle (101.3vw, 89.97vw, 14.32vw, 14.32vw);
+      background-color: $circle-blue;
+
+      @media screen and (min-width: 1440px) {
+        @include circle (53.47vw, 81.53vw, 6.18vw, 6.18vw);
+      }
+    }
+
+    &--dark-blue {
+      @include circle (114.58vw, 38.41vw, 7.68vw, 7.68vw);
+      background-color: $circle-dark-blue;
+
+      @media screen and (min-width: 1440px) {
+        @include circle (49.24vw, 62.43vw, 5.35vw, 5.35vw);
+      }
+    }
+  }
+
+  &__square {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    &--turquoise {
+      @include square (44.66vw, 90.97vw, 9.38vw, 9.38vw);
+      background-color: $square-turquoise;
+      transform: rotate(-23.41deg);
+
+      @media screen and (min-width: 1440px) {
+        @include square (37.84vw, -1.01vw, 5.96vw, 5.96vw);
+        transform: rotate(-33.88deg);
+      }
+    }
+
+    &--blue {
+      @include square (88.41vw, -2.77vw, 9.38vw, 9.38vw);
+      background-color: $square-blue;
+      transform: rotate(-23.41deg);
+
+      @media screen and (min-width: 1440px) {
+        @include square (52.29vw, 44.51vw, 3.19vw, 3.19vw);
+        background-color: $square-pink;
+        transform: rotate(0deg);
+      }
+    }
+
+    &--pink {
+      @include square (120.31vw, 61.59vw, 6.99vw, 6.99vw);
+      background-color: $square-pink;
+      transform: rotate(-23.41deg);
+
+      @media screen and (min-width: 1440px) {
+        @include square (43.54vw, 95vw, 6.39vw, 6.39vw);
+        transform: rotate(-15.02deg);
+      }
+    }
+  }
+}
