@@ -1,31 +1,99 @@
 .support {
-  position: relative;
   padding-left: 12.53vw;
   padding-right: 10.66vw;
+  padding-bottom: 75.2vw;
   background-color: $accent-bgc;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 11.65vw;
+    padding-right: 11.65vw;
+    padding-bottom: 53.13vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 23.99vw;
+    padding-right: 23.99vw;
+    padding-bottom: 18.47vw;
+  }
 
   &__title {
     margin-bottom: 14.4vw;
     width: 77.6vw;
     height: 30.66vw;
     background-color: $secondary-bgc;
+
     color: $secondary-text;
     font-size: 5.33vw;
+
+    @media screen and (min-width: 768px) {
+      width: 57.29vw;
+      height: 21.35vw;
+      margin-bottom: 7.81vw;
+      
+      font-size: 3.9vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 27.43vw;
+      height: 12.36vw;
+      margin-bottom: 3.19vw;
+      padding-bottom: 0.63vw;
+
+      font-size: 2.08vw;
+    }
   }
 
   &__wrapper {
-    width: 76.8vw;
     border-radius: 10.66vw;
     padding: 7.73vw 6.13vw 7.73vw 10.93vw;
     background-color: $support-list-bgc;
-    margin-bottom: 75.2vw;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding: 3.39vw 1.17vw 3.39vw 6.95vw;
+      border-radius: 5.21vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding-top: 2.81vw;
+      padding-bottom: 2.81vw;
+      padding-left: 6.7vw;
+      padding-right: 4.62vw;
+    }
+  }
+
+  &__text-wrapper {
+    @media screen and (min-width: 768px) {
+      flex-shrink: 0;
+      width: 38.15vw;      
+      margin-right: 2vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 19.44vw;
+      margin-right: 2.78vw;
+    }
   }
 
   &__text {
     position: relative;
+
     color: $primary-title;
+
     &:not(:last-child) {
       margin-bottom: 2.66vw;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0.52vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 0.63vw;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1.25vw;
     }
 
     &:before {
@@ -33,40 +101,146 @@
       position: absolute;
       top: -2.4vw;
       left: -3.93vw;
+
       font-size: 5.33vw;
+
+      @media screen and (min-width:768px) {
+        top: -1.5vw;
+        left: -2vw;
+
+        font-size: 3.33vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        top: -0.9vw;
+        left: -1.5vw;
+
+        font-size: 2vw;
+      }
     }
   }
 
   &__img-mark {
     position: absolute;
-    width: 6.93vw;
-    height: 28.53vw;
     top: 30.66vw;
     left: 9.06vw;
+
+    width: 6.93vw;
+    height: 28.53vw;
+
+    @media screen and (min-width: 768px) {
+      top: 22.39vw;
+      left: 10.42vw;
+
+      width: 4.56vw;
+      height: 18.75vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 11.81vw;
+      left: 24.35vw;
+
+      width: 3.49vw;
+      height: 14.34vw;
+    }
   }
 
   &__img-owl {
     position: absolute;
-    width: 52.36vw;
-    height: 82.93vw;
     right: 0;
     bottom: 0;
+
+    width: 52.36vw;
+    height: 82.93vw;
+
+    @media screen and (min-width: 768px) {
+      width: 37.52vw;
+      height: 59.42vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      right: 15.4vw;
+      bottom: 1.88vw;
+
+      width: 18.59vw;
+      height: 29.44vw;
+    }
   }
+
+  // ----------- Decorative elements ----------- //
 
   &__square--pink {
     @include square(111vw, -2vw, 9.33vw, 9.33vw);
     background-color: $square-pink;
     transform: rotate(30.82deg);
+
+    @media screen and (min-width: 768px) {
+      @include square(105.31vw, 14.84vw, 5.78vw, 5.78vw);
+      transform: rotate(27.11deg);
+    }
+
+    @media screen and (min-width: 1440px) {
+      @include square(49.86vw, 53.05vw, 3.08vw, 3.08vw);
+      transform: rotate(27.11deg);
+    }
+
+    &+.support__square--pink {
+      @include square(43.47vw, 95.86vw, 5.53vw, 5.53vw);
+      transform: rotate(27.11deg);
+
+      @media screen and (max-width: 1439px) {
+        display: none;
+      }
+    }
   }
 
   &__square--violet {
     @include square(206.4vw, 22.13vw, 12.07vw, 12.07vw);
     background-color: $square-violet;
     transform: rotate(30.82deg);
+
+    @media screen and (min-width: 768px) {
+      @include square(89.9vw, 34.11vw, 7.99vw, 7.99vw);
+      transform: rotate(22.5deg);
+    }
+
+    @media screen and (min-width: 1440px) {
+      @include square(47.36vw, 16.88vw, 5.23vw, 5.23vw);
+      transform: rotate(-18.07deg);
+    }
   }
 
   &__circle--blue {
     @include circle(165.33vw, 14.66vw, 13.8vw, 12.8vw);
     background-color: $square-blue;
+
+    @media screen and (min-width: 768px) {
+      @include circle(112.9vw, 45.44vw, 7.42vw, 7.42vw);
+    }
+
+    @media screen and (min-width: 1440px) {
+      @include circle(44.51vw, 37.29vw, 3.96vw, 3.96vw);
+    }
+
+    &+.support__circle--blue {
+      @include circle(26.53vw, 90.9vw, 5.13vw, 5.13vw);
+        
+      @media screen and (max-width: 1439px) {
+        display: none;
+      }
+    }
+  }
+
+  &__circle--turquoise {
+    @include circle(71.02vw, 1.95vw, 10.81vw, 10.81vw);
+    background-color: $circle-turquoise;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1440px) {
+      @include circle(37.99vw, 5.69vw, 5.76vw, 5.76vw);
+    }
   }
 }

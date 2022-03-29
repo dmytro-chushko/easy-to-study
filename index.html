@@ -20,17 +20,63 @@
       <a href="#" class="header__logo"></a>
       <button class="button header__button" type="button">Получить консультацию</button>
       <div class="header__menu-wrapper">
-        <label class="header__lang-label">
-          <select name="lang-list" class="header__lang-select">
-            <option value="ru" class="header__lang-name" selected>RU</option>
-            <option value="ua" class="header__lang-name">UA</option>
-            <option value="en" class="header__lang-name">EN</option>
-            <option value="pl" class="header__lang-name">PL</option>
+        <label class="lang">
+          <select name="lang-list" class="lang__list">
+            <option value="ru" class="lang__name" selected>RU</option>
+            <option value="ua" class="lang__name">UA</option>
+            <option value="en" class="lang__name">EN</option>
+            <option value="pl" class="lang__name">PL</option>
           </select>
         </label>
         <button class="button header__menu-open" type="button">Меню</button>
       </div>
       <button class="button header__phone-menu-open" type="button"></button>
+      <aside class="sidebar">
+        <div class="sidebar__wrapper">
+          <label class="lang lang--mobile">
+            <select name="lang-list" class="lang__list">
+              <option value="ru" class="lang__name" selected>RU</option>
+              <option value="ua" class="lang__name">UA</option>
+              <option value="en" class="lang__name">EN</option>
+              <option value="pl" class="lang__name">PL</option>
+            </select>
+          </label>
+          <button class="button sidebar__icon-wrapper" type="button">
+            <svg class="sidebar__icon">
+              <use href="./images/sidebar/sidebar-icons.svg#close-icon"></use>
+            </svg>
+          </button>
+          <div class="sidebar__sign">
+            <a href="" class="sidebar__link sidebar__sign-link">Войти</a>
+            &nbsp/&nbsp
+            <a href="" class="sidebar__link sidebar__sign-link">Регистрация</a>
+          </div>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Договор публичной оферты</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Политика конфиденциальности</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Отзывы</a>
+            </li>
+          </ul>
+          <strong class="contacts">Связаться с нами</strong>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="#" class="contacts__link contacts__email">support@legko-v-uchebe.com</a>
+            </li>
+            <li class="contacts__item">
+              <a href="#" class="contacts__link">Консультация в Telegram</a>
+            </li>
+            <li class="contacts__item">
+              <a href="#" class="contacts__link">Консультация в Viber</a>
+            </li>
+            <li class="contacts__item"><a href="#" class="contacts__link">Online-ЧАТ</a></li>
+          </ul>
+        </div>
+      </aside>
     </header>
     <main>
       <!-- ================ HERO ================ -->
@@ -783,15 +829,17 @@
         <h2 class="section__title support__title">Информационная поддержка</h2>
 
         <div class="support__wrapper">
-          <p class="support__text">
-            Образовательный центр «Легко в учебе» предоставляет информационные услуги:
-            консультирование, подбор, обработку и систематизацию материала по предложенной теме,
-            помощь в защите, проверку на уникальность.
-          </p>
-          <p class="support__text">
-            Результат предоставленной услуги не является готовым научным трудом, но может служить
-            источником для его написания.
-          </p>
+          <div class="support__text-wrapper">
+            <p class="support__text">
+              Образовательный центр «Легко в учебе» предоставляет информационные услуги:
+              консультирование, подбор, обработку и систематизацию материала по предложенной теме,
+              помощь в защите, проверку на уникальность.
+            </p>
+            <p class="support__text">
+              Результат предоставленной услуги не является готовым научным трудом, но может служить
+              источником для его написания.
+            </p>
+          </div>
           <p class="support__text">
             Обращаем ваше внимание, «Легко в учебе» не продает научную степень, дипломы, аттестаты
             об образовании и иные документы о высшем образовании. Все услуги предоставляются в
@@ -810,8 +858,11 @@
           </svg>
         </div>
         <div class="support__square--pink"></div>
+        <div class="support__square--pink"></div>
         <div class="support__square--violet"></div>
         <div class="support__circle--blue"></div>
+        <div class="support__circle--blue"></div>
+        <div class="support__circle--turquoise"></div>
       </section>
     </main>
     <!-- ==================== FOOTER ======================-->

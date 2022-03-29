@@ -1,0 +1,77 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: $secondary-bgc;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-align: center;
+  font-size: 4.8vw;
+  
+  &--hidden {
+    transform: translateX(100%);
+  }
+
+  &__wrapper {
+    position: relative;
+
+    height: 100%;
+    overflow-y: scroll;
+    padding-top: 29.6vw;
+    padding-bottom: 66.67vw;
+  }
+
+  &__icon-wrapper {
+    position: absolute;
+    top: 10.4vw;
+    right: 4.53vw;
+  }
+
+  &__icon {
+    width: 9.87vw;
+    height: 9.87vw;
+  }
+
+  &__sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6.67vw;
+
+    color: $sidebar-color;
+
+    &::before {
+      content: '';
+      
+      display: block;
+      width: 8.8vw;
+      height: 8.8vw;
+      margin-right: 1.33vw;
+      background-image: url(../images/sidebar/sign-icon.svg);
+      background-repeat: no-repeat;
+      background-size: 8.8vw;
+    }
+  }
+  
+  &__list {
+    margin-bottom: 11.2vw;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 6.67vw;
+    }
+  }
+
+  &__link {
+    color: $secondary-text;
+  }
+
+  &__sign-link {
+    color: $sidebar-color;
+  }
+}

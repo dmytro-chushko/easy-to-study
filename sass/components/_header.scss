@@ -92,46 +92,12 @@
   }
 
   &__menu-wrapper {
-    display: flex;
-    align-items: center;
-  }
-
-  &__lang-label {
-    display: flex;
-    align-items: center;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 2.08vw;
-      height: 2.08vw;
-      background-image: url(../images/flag-ru.svg);
-      background-size: 2vw 2vw;
-      background-repeat: no-repeat;
-
-      @media screen and (min-width: 1440px) {
-        width: 1.11vw;
-        height: 1.11vw;
-        background-size: 1.1vw 1.1vw;
-      }
-    }
-
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
-  }
-  
-  &__lang-select {
-    border: none;
 
-    font-size: 2.34vw;
-    color: #0A0070;
-    background-color: transparent;
-
-    @media screen and (min-width: 1440px) {
-      font-size: 1.25vw;
-      line-height: 1.22;
-    }
+    display: flex;
+    align-items: center;
   }
 
   &__phone-menu-open {

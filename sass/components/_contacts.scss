@@ -1,0 +1,63 @@
+.contacts {
+  display: block;
+  margin-bottom: 5.33vw;
+
+  color: $secondary-text;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-bottom: 6.67vw;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      margin-right: 2.13vw;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(1)::before {
+      width: 5.87vw;
+      height: 5.03vw;
+      background-image: url(../images/contacts/email.svg);
+      background-size: 5.87vw;
+    }
+
+    &:nth-child(2)::before {
+      width: 6.88vw;
+      height: 7.1vw;
+      background-image: url(../images/contacts/telegram.svg);
+      background-size: 6.87vw;
+    }
+
+    &:nth-child(3)::before {
+      width: 6.67vw;
+      height: 6.67vw;
+      background-image: url(../images/contacts/viber.svg);
+      background-size: 6.4vw;
+    }
+
+    &:nth-child(4)::before {
+      width: 6.53vw;
+      height: 5.87vw;
+      background-image: url(../images/contacts/chat.svg);
+      background-size: 6.53vw;
+    }
+  }
+
+  &__link {
+    
+
+    color: $secondary-text;
+
+    
+  }
+
+  &__email {
+    font-size: 4.27vw;
+  }
+}
