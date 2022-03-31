@@ -28,10 +28,14 @@
             <option value="pl" class="lang__name">PL</option>
           </select>
         </label>
-        <button class="button header__menu-open" type="button">Меню</button>
+        <button class="button header__menu-open js-header__menu-open" type="button">Меню</button>
       </div>
-      <button class="button header__phone-menu-open" type="button"></button>
-      <aside class="sidebar">
+      <button
+        class="button header__phone-menu-open js-header__phone-menu-open"
+        type="button"
+      ></button>
+      <!-- ================ SIDEBAR ================ -->
+      <aside class="sidebar sidebar--hidden js-sidebar">
         <div class="sidebar__wrapper">
           <label class="lang lang--mobile">
             <select name="lang-list" class="lang__list">
@@ -41,7 +45,8 @@
               <option value="pl" class="lang__name">PL</option>
             </select>
           </label>
-          <button class="button sidebar__icon-wrapper" type="button">
+          <button class="button sidebar__close-button js-sidebar__close-button" type="button">
+            <span class="sidebar__menu-lable">Меню</span>
             <svg class="sidebar__icon">
               <use href="./images/sidebar/sidebar-icons.svg#close-icon"></use>
             </svg>
@@ -75,6 +80,15 @@
             </li>
             <li class="contacts__item"><a href="#" class="contacts__link">Online-ЧАТ</a></li>
           </ul>
+          <!-- ================ Decorative elements ================ -->
+          <div class="sidebar__circle--pink"></div>
+          <div class="sidebar__circle--yellow"></div>
+          <div class="sidebar__circle--blue"></div>
+          <div class="sidebar__circle--dark-blue"></div>
+          <div class="sidebar__square--pink"></div>
+          <div class="sidebar__square--violet"></div>
+          <div class="sidebar__square--yellow"></div>
+          <div class="sidebar__owl"></div>
         </div>
       </aside>
     </header>
@@ -1033,5 +1047,6 @@
       </div>
       <p class="footer__copyright-text">© 2013-2021 «Legko-v-uchebe». Все права защищены.</p>
     </footer>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

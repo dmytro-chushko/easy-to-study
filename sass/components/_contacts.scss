@@ -4,13 +4,44 @@
 
   color: $secondary-text;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 1.56vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 0.83vw;
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      width: 36.46vw;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 19.44vw;
+    }
+  }
+
   &__item {
     display: flex;
     align-items: center;
     justify-content: center;
 
+    @media screen and (min-width: 768px) {
+     justify-content: left; 
+    }
+
     &:not(:last-child) {
       margin-bottom: 6.67vw;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 2.08vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 0.9vw;
+      }
     }
 
     &::before {
@@ -18,6 +49,14 @@
       display: block;
       margin-right: 2.13vw;
       background-repeat: no-repeat;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 1.3vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-right: 0.69vw;
+      }
     }
 
     &:nth-child(1)::before {
@@ -25,6 +64,18 @@
       height: 5.03vw;
       background-image: url(../images/contacts/email.svg);
       background-size: 5.87vw;
+
+      @media screen and (min-width: 768px) {
+        width: 2.86vw;
+        height: 2.46vw;
+        background-size: 2.86vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 1.53vw;
+        height: 1.31vw;
+        background-size: 1.53vw;
+      }
     }
 
     &:nth-child(2)::before {
@@ -32,13 +83,37 @@
       height: 7.1vw;
       background-image: url(../images/contacts/telegram.svg);
       background-size: 6.87vw;
+
+      @media screen and (min-width: 768px) {
+        width: 3.36vw;
+        height: 3.36vw;
+        background-size: 3.36vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 1.79vw;
+        height: 1.79vw;
+        background-size: 1.79vw;
+      }
     }
 
     &:nth-child(3)::before {
       width: 6.67vw;
-      height: 6.67vw;
+      height: 6.8vw;
       background-image: url(../images/contacts/viber.svg);
       background-size: 6.4vw;
+
+      @media screen and (min-width: 768px) {
+        width: 3.16vw;
+        height: 3.26vw;
+        background-size: 3.16vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 1.67vw;
+        height: 1.74vw;
+        background-size: 1.67vw;
+      }
     }
 
     &:nth-child(4)::before {
@@ -46,18 +121,34 @@
       height: 5.87vw;
       background-image: url(../images/contacts/chat.svg);
       background-size: 6.53vw;
+
+      @media screen and (min-width: 768px) {
+        width: 3.19vw;
+        height: 2.86vw;
+        background-size: 3.19vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 1.7vw;
+        height: 1.53vw;
+        background-size: 1.7vw;
+      }
     }
   }
 
   &__link {
-    
-
     color: $secondary-text;
-
-    
   }
 
   &__email {
     font-size: 4.27vw;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2.083vw;
+    }
+
+    @media screen  and (min-width: 1440px) {
+      font-size: 1.11vw;
+    }
   }
 }

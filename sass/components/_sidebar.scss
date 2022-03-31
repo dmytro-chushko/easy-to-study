@@ -1,7 +1,7 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 2;
 
   width: 100vw;
@@ -11,6 +11,24 @@
 
   text-align: center;
   font-size: 4.8vw;
+
+  @media screen and (min-width: 768px) {
+    width: 40.63vw;
+    height: 92.97vw;
+
+    font-size: 2.34vw;
+
+    @media screen and (orientation: landscape) and (max-width: 1439px) {
+      height: 100vh;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 21.67vw;
+    height: 49.58vw;
+
+    font-size: 1.25vw;
+  }
   
   &--hidden {
     transform: translateX(100%);
@@ -21,19 +39,82 @@
 
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
     padding-top: 29.6vw;
     padding-bottom: 66.67vw;
+
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+      padding-top: 5.6vw;
+      padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 8.98vw;
+      padding-bottom: 28.39vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding-top: 5.21vw;
+      padding-bottom: 15.14vw;
+      overflow-y: hidden;
+    }
   }
 
-  &__icon-wrapper {
+  &__close-button {
     position: absolute;
     top: 10.4vw;
     right: 4.53vw;
+
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+      top: 3vw;
+      right: 3vw;
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 3.9vw;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 2.08vw;
+    }
+  }
+
+  &__menu-lable {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    font-weight: 400;
+    font-size: 2.6vw;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $secondary-text;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1.39vw;
+    }
   }
 
   &__icon {
     width: 9.87vw;
     height: 9.87vw;
+
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+      width: 5vw;
+      height: 5vw;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 1.95vw;
+      height: 1.95vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 1.04vw;
+      height: 1.04vw;
+    }
   }
 
   &__sign {
@@ -43,6 +124,14 @@
     margin-bottom: 6.67vw;
 
     color: $sidebar-color;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 1.43vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 0.76vw;
+    }
 
     &::before {
       content: '';
@@ -54,16 +143,51 @@
       background-image: url(../images/sidebar/sign-icon.svg);
       background-repeat: no-repeat;
       background-size: 8.8vw;
+
+      @media screen and (min-width: 768px) {
+        width: 4.3vw;
+        height: 4.3vw;
+        margin-right: 0.65vw;
+        background-size: 4.3vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 2.29vw;
+        height: 2.29vw;
+        margin-right: 0.35vw;
+        background-size: 2.29vw;
+      }
     }
   }
   
   &__list {
     margin-bottom: 11.2vw;
+
+    @media screen and (min-width: 768px) {
+      width: 27.6vw;
+      margin: 0 auto;
+      margin-bottom: 9.9vw;
+
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 14.72vw;
+      margin-bottom: 5.28vw;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-bottom: 6.67vw;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 2.08vw;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 1.11vw;
+      }
     }
   }
 
@@ -73,5 +197,135 @@
 
   &__sign-link {
     color: $sidebar-color;
+  }
+
+  // ----------- Decorative elements ----------- //
+
+  &__circle {
+    &--pink {
+      @include circle(34.13vw, 91.2vw, 11.2vw, 11.2vw);
+      background-color: $circle-pink;
+
+      @media screen and (min-width: 768px) {
+        @include circle(12.89vw, 36.85vw, 5.47vw, 5.47vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(6.88vw, 19.65vw, 2.92vw, 2.92vw);
+      }
+    }
+
+    &--yellow {
+      @include circle(79.93vw, 1.6vw, 11.2vw, 11.2vw);
+      background-color: $circle-yellow;
+
+      @media screen and (min-width: 768px) {
+        @include circle(29.17vw, -1.82vw, 5.47vw, 5.47vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(15.56vw, -0.97vw, 2.92vw, 2.92vw);
+      }
+    }
+
+    &--blue {
+      @include circle(184.37vw, 41.87vw, 16.27vw, 16.27vw);
+      background-color: $circle-blue;
+
+      @media screen and (min-width: 768px) {
+        @include circle(82.94vw, 17.58vw, 7.94vw, 7.94vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(44.24vw, 9.38vw, 4.24vw, 4.24vw);
+      }
+    }
+
+    &--dark-blue {
+      @include circle(152.8vw, 80.8vw, 8.53vw, 8.53vw);
+      background-color: $circle-dark-blue;
+
+      @media screen and (min-width: 768px) {
+        @include circle(70.44vw, 34.51vw, 4.17vw, 4.17vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(37.57vw, 18.4vw, 2.22vw, 2.22vw);
+      }
+    }
+  }
+
+  &__square {
+    &--pink {
+      @include square(162.93vw, 2.67vw, 10.93vw, 10.93vw);
+      background-color: $square-pink;
+      transform: rotate(23.76deg);
+
+      @media screen and (min-width: 768px) {
+        @include square(74.61vw, -2.21vw, 5.34vw, 5.34vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include square(39.79vw, -1.18vw, 2.85vw, 2.85vw);
+      }
+    }
+
+    &--violet {
+      @include square(80.27vw, 88.27vw, 10.93vw, 10.93vw);
+      background-color: $square-violet;
+      transform: rotate(23.76deg);
+
+      @media screen and (min-width: 768px) {
+        @include square(41.15vw, 36.85vw, 5.34vw, 5.34vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include square(21.94vw, 19.65vw, 2.85vw, 2.85vw);
+      }
+    }
+
+    &--yellow {
+      @include square(181.06vw, 79.73vw, 8.1vw, 8.1vw);
+      background-color: $square-yellow;
+      transform: rotate(-26.82deg);
+
+      @media screen and (min-width: 768px) {
+        @include square(84.24vw, 33.98vw, 3.96vw, 3.96vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include square(44.93vw, 18.13vw, 2.11vw, 2.11vw);
+      }
+    }
+  }
+
+  &__owl {
+    position: absolute;
+    top: 151.73vw;
+    left: 38.13vw;
+
+    width: 24.25vw;
+    height: 38.4vw;
+    background-image: url(../images/sidebar/sidebar-owl.svg);
+    background-repeat: no-repeat;
+    background-size: 24.25vw;
+
+    @media screen and (min-width: 768px) {
+      top: 66.93vw;
+      left: 15.63vw;
+      
+      width: 11.84vw;
+      height: 18.75vw;
+      background-size: 11.84vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: 35.69vw;
+      left: 8.33vw;
+
+      width: 6.31vw;
+      height: 10vw;
+      background-size: 6.31vw;
+    }
   }
 }

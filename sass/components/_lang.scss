@@ -29,12 +29,20 @@
   }
 
   &--mobile {
-    position: absolute;
-    top: 12.8vw;
-    left: 5.33vw;
+    display: none;
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 12.8vw;
+      left: 5.33vw;
 
-    display: block;      
+      display: block;
+
+      @media screen and (orientation: landscape) {
+        top: 0.8vw;
+        left: 1.33vw;
+      }
     }
+  }
   
   &__list {
     border: none;
@@ -45,6 +53,10 @@
 
     @media screen and (max-width: 767px) {
       font-size: 4.8vw;
+
+      // @media screen and (orientation: landscape) {
+      //   font-size: 3.34vw;
+      // }
     }
 
     @media screen and (min-width: 1440px) {
